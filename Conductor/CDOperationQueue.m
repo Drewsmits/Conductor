@@ -52,12 +52,6 @@
     return q;
 }
 
-- (void)queueDidFinish
-{
-    [self.progressObservers makeObjectsPerformSelector:@selector(runCompletionBlock)];
-    [self removeAllProgressObservers];
-}
-
 #pragma mark - Operations API
 
 - (void)addOperation:(CDOperation *)operation 
@@ -189,6 +183,12 @@
 - (void)setSuspended:(BOOL)suspend
 {
     [self.queue setSuspended:suspend];
+}
+
+- (void)queueDidFinish
+{
+    [self.progressObservers makeObjectsPerformSelector:@selector(runCompletionBlock)];
+    [self removeAllProgressObservers];
 }
 
 #pragma mark - Max

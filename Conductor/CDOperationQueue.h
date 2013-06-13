@@ -110,8 +110,19 @@ typedef enum {
  */
 - (void)setSuspended:(BOOL)suspend;
 
+/**
+ Returns YES if the operation count is greater than zero
+ */
 - (BOOL)isExecuting;
+
+/**
+ Returns YES if the operation count is zero
+ */
 - (BOOL)isFinished;
+
+/**
+ Returns YES if the internal NSOperationQueue is suspended
+ */
 - (BOOL)isSuspended;
 
 /**
@@ -126,10 +137,20 @@ typedef enum {
  */
 - (CDOperation *)getOperationWithIdentifier:(id)identifier;
 
+/**
+ Adds a CDProgressObserver. Observer progress and completion blocks will be run as operations finish
+ and call back to the queue.
+ */
 - (void)addProgressObserver:(CDProgressObserver *)observer;
 
+/**
+ Removes the progress obsever
+ */
 - (void)removeProgressObserver:(CDProgressObserver *)observer;
 
+/**
+ Removes all progress observers
+ */
 - (void)removeAllProgressObservers;
 
 @end
