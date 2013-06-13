@@ -62,7 +62,9 @@
         return;
     }
         
-    // Check to see if operation already exists
+    //
+    // If the operation already exists, give the new operation a unique identifier to avoid collision
+    //
     if ([self getOperationWithIdentifier:operation.identifier] != nil)
     {
         ConductorLogTrace(@"Already has operation with identifier %@. Uniquifiying this one.", operation.identifier);
@@ -83,12 +85,18 @@
         [self.progressObservers makeObjectsPerformSelector:@selector(addToStartingOperationCount:)
                                                 withObject:@(1)];
         
+        //
+        // Operation will call back when it is done
+        //
         operation.delegate = self;
     }
     
-    // Add operation to queue and start
+    // Add operation to queue, which starts it
     [self.queue addOperation:operation];
     
+    //
+    // If the max is reached, alert the observer
+    //
     if (self.maxQueueOperationCountReached)
     {
         if ([self.operationsObserver respondsToSelector:@selector(maxQueuedOperationsReachedForQueue:)])
@@ -103,12 +111,18 @@
 {
     @synchronized(self.operations)
     {
-        ConductorLogTrace(@"Removing operation %@ from queue %@", operation.identifier, self.name);
-       
         if (![self.operations objectForKey:operation.identifier]) return;
-        
+     
+        ConductorLogTrace(@"Removing operation %@ from queue %@", operation.identifier, self.name);
+
+        //
+        // Remove the operation
+        //
         [self.operations removeObjectForKey:operation.identifier];
-                
+        
+        //
+        // All progress observers run the progress block with the current operation count
+        //
         [self.progressObservers makeObjectsPerformSelector:@selector(runProgressBlockWithCurrentOperationCount:)
                                                 withObject:@(self.operationCount)];
     }
@@ -144,6 +158,10 @@
 {
     [self removeOperation:operation];
     
+    //
+    // If the max count hasn't been reached, alert the operations observer that the queue can accept
+    // jobs again.
+    //
     if (!self.maxQueueOperationCountReached)
     {
         if ([self.operationsObserver respondsToSelector:@selector(canBeginSubmittingOperationsForQueue:)])
@@ -187,7 +205,14 @@
 
 - (void)queueDidFinish
 {
+    //
+    // All progress observers run completion block
+    //
     [self.progressObservers makeObjectsPerformSelector:@selector(runCompletionBlock)];
+    
+    //
+    // Remove all progress observers
+    //
     [self removeAllProgressObservers];
 }
 
