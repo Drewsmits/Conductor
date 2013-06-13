@@ -40,15 +40,6 @@
         });
     };
     
-//    [[CDQueueController sharedInstance] addProgressObserver:observer
-//                                               toQueueNamed:CONDUCTOR_APP_QUEUE];
-//    
-//    for (int i = 0; i < 100; i++) {
-//        CDOneSecondOperation *operation = [CDOneSecondOperation new];
-//        [[CDQueueController sharedInstance] addOperation:operation
-//                                            toQueueNamed:CONDUCTOR_APP_QUEUE];
-//    }
-    
     // Left side
     self.leftSideOperations = [NSMutableArray new];
     self.leftOperationView.numberOfOperationViews = NUMBER_OF_OPERATIONS_PER_SIDE;
