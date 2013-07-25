@@ -103,7 +103,11 @@
         {
             [self.operationsObserver maxQueuedOperationsReachedForQueue:self];
         }
-        return;
+    } else {
+        if ([self.operationsObserver respondsToSelector:@selector(canBeginSubmittingOperationsForQueue:)])
+        {
+            [self.operationsObserver canBeginSubmittingOperationsForQueue:self];
+        }
     }
 }
 
