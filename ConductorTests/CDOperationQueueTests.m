@@ -14,13 +14,20 @@
 
 @implementation CDOperationQueueTests
 
-- (void)testCreateQueueWithName {
+- (void)testCreateQueueWithName
+{
     CDOperationQueue *queue = [CDOperationQueue queueWithName:@"MyQueueName"];
     STAssertEqualObjects(queue.name, @"MyQueueName", @"Queue should have the correct name");
 }
 
-- (void)testAddOperationToQueue {
-    
+- (void)testAddNonCDOperationToQueue
+{
+    CDOperation *op = (CDOperation *)[NSOperation new];
+    STAssertThrows([testOperationQueue addOperation:op], @"Adding a non CDOperation subclass should raise an exception");
+}
+
+- (void)testAddOperationToQueue
+{    
     __block BOOL hasFinished = NO;
     
     void (^completionBlock)(void) = ^(void) {
@@ -43,8 +50,23 @@
     STAssertTrue(hasFinished, @"Test operation queue should finish");
 }
 
-- (void)testAddOperationToQueueAtPriority {
+- (void)testAddOperationToQueueWithDuplicateIdentifier
+{    
+    CDTestOperation *op1 = [CDTestOperation operationWithIdentifier:@"anIdentifier"];
+    CDTestOperation *op2 = [CDTestOperation operationWithIdentifier:@"anIdentifier"];
     
+    [testOperationQueue addOperation:op1];
+    [testOperationQueue addOperation:op2];
+    
+    STAssertEqualObjects(op1.identifier, @"anIdentifier", @"First operation should have same identifier");
+    
+    BOOL notEqual = [op1.identifier isEqual:op2.identifier];
+    
+    STAssertFalse(notEqual, @"Second operation should have a different ID");
+}
+
+- (void)testAddOperationToQueueAtPriority
+{    
     __block BOOL hasFinished = NO;
     
     void (^completionBlock)(void) = ^(void) {
@@ -68,8 +90,8 @@
     STAssertEquals(op.queuePriority, NSOperationQueuePriorityVeryLow, @"Operation should have correct priority");
 }
 
-- (void)testChangeOperationPriority {
-    
+- (void)testChangeOperationPriority
+{    
     __block BOOL hasFinished = NO;
     
     void (^completionBlock)(void) = ^(void) {
@@ -95,8 +117,8 @@
     STAssertEquals(op.queuePriority, NSOperationQueuePriorityVeryLow, @"Operation should have correct priority");
 }
 
-- (void)testChangeOperationPriorityFinishOrder {
-    
+- (void)testChangeOperationPriorityFinishOrder
+{    
     __block BOOL hasFinished = NO;
     
     __block NSDate *last = nil;
@@ -151,8 +173,8 @@
     STAssertTrue((firstInt < lastInt), @"Operation should finish first");
 }
 
-- (void)testEmptyQueueShouldHaveEmptyOperationsDict {
-    
+- (void)testEmptyQueueShouldHaveEmptyOperationsDict
+{    
     __block BOOL hasFinished = NO;
     
     CDTestOperation *op = [CDTestOperation new];
@@ -177,11 +199,13 @@
 
 #pragma mark - Operation Count
 
-- (void)testOperationCountNoQueue {
+- (void)testOperationCountNoQueue
+{
     STAssertEquals(testOperationQueue.operationCount, 0U, @"Operation count should be correct");
 }
 
-- (void)testOperationCountQueue {
+- (void)testOperationCountQueue
+{
     CDLongRunningTestOperation *op1 = [CDLongRunningTestOperation new];
     CDLongRunningTestOperation *op2 = [CDLongRunningTestOperation new];    
     CDLongRunningTestOperation *op3 = [CDLongRunningTestOperation new];    
@@ -193,8 +217,8 @@
     STAssertEquals(testOperationQueue.operationCount, 3U, @"Operation count should be correct");
 }
 
-- (void)testOperationCountAfterOperationFinishes {      
-    
+- (void)testOperationCountAfterOperationFinishes
+{    
     CDTestOperation *op = [CDTestOperation new];
     
     [testOperationQueue addOperation:op];
@@ -229,8 +253,8 @@
     STAssertFalse(testOperationQueue.isExecuting, @"Operation queue should not be running");
 }
 
-- (void)testOperationQueueShouldReportFinished {      
-    
+- (void)testOperationQueueShouldReportFinished
+{    
     CDTestOperation *op = [CDTestOperation new];
     [testOperationQueue addOperation:op];
         
@@ -246,7 +270,8 @@
     STAssertTrue(testOperationQueue.isFinished, @"Operation queue should be finished");
 }
 
-- (void)testOperationQueueShouldReportSuspended {
+- (void)testOperationQueueShouldReportSuspended
+{
     CDLongRunningTestOperation *op = [CDLongRunningTestOperation new];    
     [testOperationQueue addOperation:op];
     
@@ -257,7 +282,8 @@
     STAssertTrue(testOperationQueue.isSuspended, @"Operation queue should be finished");
 }
 
-- (void)testOperationQueueShouldResumeAfterSuspended {
+- (void)testOperationQueueShouldResumeAfterSuspended
+{
     CDLongRunningTestOperation *op = [CDLongRunningTestOperation longRunningOperationWithDuration:5.0];
     [testOperationQueue addOperation:op];
     

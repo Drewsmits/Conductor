@@ -39,5 +39,9 @@ static void DeleteDataStore(void) {
     }
 }
 
+#define WAIT_ON_BOOL(value) NSDate *loopUntil = [NSDate dateWithTimeIntervalSinceNow:0.1];\
+while (value == NO) {\
+[[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:loopUntil];\
+}\
 
 #endif

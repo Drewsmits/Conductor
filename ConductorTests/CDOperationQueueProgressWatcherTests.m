@@ -100,7 +100,8 @@
     STAssertEquals(watcher.startingOperationCount, 4, @"Progress watcher should have correct starting operation count");    
 }
 
-- (void)testRunWatcherProgressAndCompletionBlocks {
+- (void)testRunWatcherProgressAndCompletionBlocks
+{
     CDTestOperation *op1 = [CDTestOperation new];
     CDTestOperation *op2 = [CDTestOperation new];
     CDTestOperation *op3 = [CDTestOperation new];

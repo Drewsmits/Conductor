@@ -16,7 +16,8 @@
 
 @implementation CDCoreDataOperationTests
 
-- (void)setUp {
+- (void)setUp
+{
     [super setUp];
     
     DeleteDataStore();
@@ -51,7 +52,8 @@
     [super tearDown];
 }
 
-- (void)testStart {
+- (void)testStart
+{
     CDCoreDataOperation *operation = [CDCoreDataOperation operationWithMainContext:context];
     
     [operation start];

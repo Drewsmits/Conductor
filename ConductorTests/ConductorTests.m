@@ -30,6 +30,7 @@
 #import "CDOperation.h"
 #import "CDTestOperation.h"
 #import "CDLongRunningTestOperation.h"
+#import "ConductorTestMacros.h"
 
 @implementation ConductorTests
 
@@ -176,7 +177,7 @@
     [conductor suspendAllQueues];
     [conductor resumeAllQueues];
     
-    [conductor waitForQueueNamed:CONDUCTOR_TEST_QUEUE];
+    WAIT_ON_BOOL(hasFinished);
     
     STAssertTrue(hasFinished, @"Conductor should add and complete test operation");
 }
@@ -195,8 +196,8 @@
     
     [conductor suspendQueueNamed:CONDUCTOR_TEST_QUEUE];
     [conductor resumeQueueNamed:CONDUCTOR_TEST_QUEUE];
-    
-    [conductor waitForQueueNamed:CONDUCTOR_TEST_QUEUE];
+        
+    WAIT_ON_BOOL(hasFinished);
     
     STAssertTrue(hasFinished, @"Conductor should add and complete test operation");
 }

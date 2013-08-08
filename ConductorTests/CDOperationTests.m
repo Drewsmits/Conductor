@@ -13,18 +13,20 @@
 
 @implementation CDOperationTests
 
-- (void)testCreateOperationWithIdentifier {
+- (void)testCreateOperationWithIdentifier
+{
     CDOperation *op = [CDOperation operationWithIdentifier:@"1234"];
     STAssertEqualObjects(op.identifier, @"1234", @"Operation should have correct identifier");
 }
 
-- (void)testCreateOperationWithoutIdentifier {
+- (void)testCreateOperationWithoutIdentifier
+{
     CDOperation *op = [CDOperation new];
-    STAssertNotNil(op.identifier, @"Operation should have an identifier");
+    STAssertNotNil(op.identifier, @"Operation should have an auto generated identifier");
 }
 
-- (void)testRunTestOperation {
-    
+- (void)testRunTestOperation
+{    
     __block BOOL hasFinished = NO;
     
     void (^completionBlock)(void) = ^(void) {
@@ -49,8 +51,8 @@
     STAssertTrue(op.isFinished, @"Test operation should be finished");
 }
 
-- (void)testCancelOperation {       
-    
+- (void)testCancelOperation
+{    
     CDTestOperation *op = [CDTestOperation new];
     
     NSOperationQueue *queue = [[NSOperationQueue alloc] init];
