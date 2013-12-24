@@ -29,6 +29,7 @@
 #import "CDQueueController.h"
 #import "CDOperationQueue.h"
 #import "CDProgressObserver.h"
+#import "ConductorTestMacros.h"
 
 #define CONDUCTOR_TEST_QUEUE @"com.conductor.testQueue"
 

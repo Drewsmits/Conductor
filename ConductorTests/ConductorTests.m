@@ -119,7 +119,7 @@
 
 - (void)testConductorCancelAllOperations {
         
-    CDLongRunningTestOperation *op = [CDLongRunningTestOperation new];
+    CDLongRunningTestOperation *op = [CDLongRunningTestOperation longRunningOperationWithDuration:5.0];
     
     [conductor addOperation:op toQueueNamed:CONDUCTOR_TEST_QUEUE];
     
@@ -129,7 +129,7 @@
 }
 
 - (void)testConductureCancelAllOperationsInQueueNamed {
-    CDLongRunningTestOperation *op = [CDLongRunningTestOperation new];
+    CDLongRunningTestOperation *op = [CDLongRunningTestOperation longRunningOperationWithDuration:5.0];
     
     [conductor addOperation:op toQueueNamed:CONDUCTOR_TEST_QUEUE];
     
@@ -139,7 +139,7 @@
 }
 
 - (void)testConductorSuspendAllQueues {
-    CDLongRunningTestOperation *op = [CDLongRunningTestOperation new];
+    CDLongRunningTestOperation *op = [CDLongRunningTestOperation longRunningOperationWithDuration:5.0];
     
     [conductor addOperation:op toQueueNamed:CONDUCTOR_TEST_QUEUE];
     

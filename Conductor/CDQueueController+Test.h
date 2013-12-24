@@ -30,8 +30,7 @@
 
 /**
  Blocks the calling thread until all jobs in the designated queue finish.  This
- can be useful for unit testing asynchronous code.  This could be dangerous in
- production.
+ can be useful for unit testing asynchronous code.  This is dangerous in production.
  */
 - (void)waitForQueueNamed:(NSString *)queueName;
 

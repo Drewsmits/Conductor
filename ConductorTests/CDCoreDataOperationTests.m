@@ -34,6 +34,34 @@
 
 @implementation CDCoreDataOperationTests
 
+static NSURL *DataModelURL(void) {
+    
+    NSBundle *testBundle = [NSBundle bundleForClass:[CDTest class]];
+    
+    NSString *path = [testBundle pathForResource:@"ConductorTestDataModel"
+                                          ofType:@"momd"];
+    return [NSURL URLWithString:path];
+}
+
+static NSURL *DataStoreURL(void) {
+    
+    NSBundle *testBundle = [NSBundle bundleForClass:[CDTest class]];
+    
+    NSURL *storeURL = [[testBundle resourceURL] URLByAppendingPathComponent:@"ConductorTests.sqlite"];
+    
+    return storeURL;
+}
+
+static void DeleteDataStore(void) {
+    
+    NSURL *url = DataStoreURL();
+    
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    if (url) {
+        [fileManager removeItemAtURL:url error:NULL];
+    }
+}
+
 - (void)setUp
 {
     [super setUp];
@@ -96,19 +124,12 @@
         hasFinished = YES;
     };
     
-    
     CDTestCoreDataOperation *operation = (CDTestCoreDataOperation *)[CDTestCoreDataOperation operationWithMainContext:context];
     operation.completionBlock = completionBlock;
     
     [conductor addOperation:operation toQueueNamed:CONDUCTOR_TEST_QUEUE];
-        
-    NSDate *loopUntil = [NSDate dateWithTimeIntervalSinceNow:0.1];
-    while (hasFinished == NO) {
-        [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode
-                                 beforeDate:loopUntil];
-    }
     
-    [conductor waitForQueueNamed:CONDUCTOR_TEST_QUEUE];
+    WAIT_ON_BOOL(hasFinished);
     
     results = [context executeFetchRequest:request error:&error];
     

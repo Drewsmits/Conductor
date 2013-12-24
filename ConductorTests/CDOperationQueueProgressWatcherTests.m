@@ -147,11 +147,7 @@
     
     [testOperationQueue addProgressObserver:observer];
     
-    NSDate *loopUntil = [NSDate dateWithTimeIntervalSinceNow:0.2];
-    while (testOperationQueue.isExecuting) {
-        [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode
-                                 beforeDate:loopUntil];
-    } 
+    WAIT_ON_BOOL(!testOperationQueue.isExecuting);
     
     XCTAssertTrue(completionBlockDidRun, @"Completion block should run");
     XCTAssertEqual(progressIndicator, 1.0f, @"Progress block should run correctly");

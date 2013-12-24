@@ -94,12 +94,7 @@
     [queue addOperation:[CDTestOperation new]];
     [queue addOperation:[CDTestOperation new]];
     
-    // Loop until queue finishes
-    NSDate *loopUntil = [NSDate dateWithTimeIntervalSinceNow:1.0];
-    while (queue.isExecuting == YES) {
-        [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode
-                                 beforeDate:loopUntil];
-    }
+    WAIT_ON_BOOL(!queue.isExecuting);
     
     XCTAssertTrue(mockObserver.canBeginMessageRecieved, @"Observer should have recieved max message");
 }

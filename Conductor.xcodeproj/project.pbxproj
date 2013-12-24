@@ -84,14 +84,14 @@
 		8B4AAF80186926370001DCE2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		8B4AAF87186926370001DCE2 /* ConductorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ConductorTests-Info.plist"; sourceTree = "<group>"; };
 		8B4AAF89186926370001DCE2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		8BD2802D1869269400AB9A82 /* CDCoreDataOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDCoreDataOperation.h; sourceTree = "<group>"; };
-		8BD2802E1869269400AB9A82 /* CDCoreDataOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDCoreDataOperation.m; sourceTree = "<group>"; };
-		8BD2802F1869269400AB9A82 /* CDKVOOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDKVOOperation.h; sourceTree = "<group>"; };
-		8BD280301869269400AB9A82 /* CDKVOOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDKVOOperation.m; sourceTree = "<group>"; };
-		8BD280311869269400AB9A82 /* CDOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDOperation.h; sourceTree = "<group>"; };
-		8BD280321869269400AB9A82 /* CDOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDOperation.m; sourceTree = "<group>"; };
-		8BD280331869269400AB9A82 /* CDOperationQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDOperationQueue.h; sourceTree = "<group>"; };
-		8BD280341869269400AB9A82 /* CDOperationQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDOperationQueue.m; sourceTree = "<group>"; };
+		8BD2802D1869269400AB9A82 /* CDCoreDataOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CDCoreDataOperation.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		8BD2802E1869269400AB9A82 /* CDCoreDataOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CDCoreDataOperation.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		8BD2802F1869269400AB9A82 /* CDKVOOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CDKVOOperation.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		8BD280301869269400AB9A82 /* CDKVOOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CDKVOOperation.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		8BD280311869269400AB9A82 /* CDOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CDOperation.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		8BD280321869269400AB9A82 /* CDOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CDOperation.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		8BD280331869269400AB9A82 /* CDOperationQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CDOperationQueue.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		8BD280341869269400AB9A82 /* CDOperationQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CDOperationQueue.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		8BD280351869269400AB9A82 /* CDProgressObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDProgressObserver.h; sourceTree = "<group>"; };
 		8BD280361869269400AB9A82 /* CDProgressObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDProgressObserver.m; sourceTree = "<group>"; };
 		8BD280371869269400AB9A82 /* CDQueueController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDQueueController.h; sourceTree = "<group>"; };
@@ -102,10 +102,10 @@
 		8BD2803C1869269400AB9A82 /* CDQueueController+Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CDQueueController+Test.m"; sourceTree = "<group>"; };
 		8BD2803D1869269400AB9A82 /* Conductor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Conductor.h; sourceTree = "<group>"; };
 		8BD28051186926F300AB9A82 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		8BD28077186927ED00AB9A82 /* CDCoreDataOperationTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDCoreDataOperationTests.h; sourceTree = "<group>"; };
-		8BD28078186927ED00AB9A82 /* CDCoreDataOperationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDCoreDataOperationTests.m; sourceTree = "<group>"; };
-		8BD28079186927ED00AB9A82 /* CDLongRunningTestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDLongRunningTestOperation.h; sourceTree = "<group>"; };
-		8BD2807A186927ED00AB9A82 /* CDLongRunningTestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDLongRunningTestOperation.m; sourceTree = "<group>"; };
+		8BD28077186927ED00AB9A82 /* CDCoreDataOperationTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CDCoreDataOperationTests.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		8BD28078186927ED00AB9A82 /* CDCoreDataOperationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CDCoreDataOperationTests.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		8BD28079186927ED00AB9A82 /* CDLongRunningTestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CDLongRunningTestOperation.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		8BD2807A186927ED00AB9A82 /* CDLongRunningTestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CDLongRunningTestOperation.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		8BD2807B186927ED00AB9A82 /* CDOperationQueueMaxTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDOperationQueueMaxTests.h; sourceTree = "<group>"; };
 		8BD2807C186927ED00AB9A82 /* CDOperationQueueMaxTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDOperationQueueMaxTests.m; sourceTree = "<group>"; };
 		8BD2807D186927ED00AB9A82 /* CDOperationQueueProgressWatcherTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDOperationQueueProgressWatcherTests.h; sourceTree = "<group>"; };
@@ -183,23 +183,11 @@
 		8B4AAF71186926370001DCE2 /* Conductor */ = {
 			isa = PBXGroup;
 			children = (
-				8BD2802D1869269400AB9A82 /* CDCoreDataOperation.h */,
-				8BD2802E1869269400AB9A82 /* CDCoreDataOperation.m */,
-				8BD2802F1869269400AB9A82 /* CDKVOOperation.h */,
-				8BD280301869269400AB9A82 /* CDKVOOperation.m */,
-				8BD280311869269400AB9A82 /* CDOperation.h */,
-				8BD280321869269400AB9A82 /* CDOperation.m */,
-				8BD280331869269400AB9A82 /* CDOperationQueue.h */,
-				8BD280341869269400AB9A82 /* CDOperationQueue.m */,
-				8BD280351869269400AB9A82 /* CDProgressObserver.h */,
-				8BD280361869269400AB9A82 /* CDProgressObserver.m */,
-				8BD280391869269400AB9A82 /* CDQueueController+State.h */,
-				8BD2803A1869269400AB9A82 /* CDQueueController+State.m */,
-				8BD2803B1869269400AB9A82 /* CDQueueController+Test.h */,
-				8BD2803C1869269400AB9A82 /* CDQueueController+Test.m */,
-				8BD280371869269400AB9A82 /* CDQueueController.h */,
-				8BD280381869269400AB9A82 /* CDQueueController.m */,
 				8BD2803D1869269400AB9A82 /* Conductor.h */,
+				8BD2809918692AD600AB9A82 /* Operation */,
+				8BD2809C18692AF900AB9A82 /* Progress */,
+				8BD2809B18692AF000AB9A82 /* Queue */,
+				8BD2809A18692AE100AB9A82 /* Queue Controller */,
 				8B4AAF72186926370001DCE2 /* Supporting Files */,
 			);
 			path = Conductor;
@@ -250,6 +238,50 @@
 				8B4AAF88186926370001DCE2 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8BD2809918692AD600AB9A82 /* Operation */ = {
+			isa = PBXGroup;
+			children = (
+				8BD2802D1869269400AB9A82 /* CDCoreDataOperation.h */,
+				8BD2802E1869269400AB9A82 /* CDCoreDataOperation.m */,
+				8BD2802F1869269400AB9A82 /* CDKVOOperation.h */,
+				8BD280301869269400AB9A82 /* CDKVOOperation.m */,
+				8BD280311869269400AB9A82 /* CDOperation.h */,
+				8BD280321869269400AB9A82 /* CDOperation.m */,
+			);
+			name = Operation;
+			sourceTree = "<group>";
+		};
+		8BD2809A18692AE100AB9A82 /* Queue Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8BD280391869269400AB9A82 /* CDQueueController+State.h */,
+				8BD2803A1869269400AB9A82 /* CDQueueController+State.m */,
+				8BD2803B1869269400AB9A82 /* CDQueueController+Test.h */,
+				8BD2803C1869269400AB9A82 /* CDQueueController+Test.m */,
+				8BD280371869269400AB9A82 /* CDQueueController.h */,
+				8BD280381869269400AB9A82 /* CDQueueController.m */,
+			);
+			name = "Queue Controller";
+			sourceTree = "<group>";
+		};
+		8BD2809B18692AF000AB9A82 /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+				8BD280331869269400AB9A82 /* CDOperationQueue.h */,
+				8BD280341869269400AB9A82 /* CDOperationQueue.m */,
+			);
+			name = Queue;
+			sourceTree = "<group>";
+		};
+		8BD2809C18692AF900AB9A82 /* Progress */ = {
+			isa = PBXGroup;
+			children = (
+				8BD280351869269400AB9A82 /* CDProgressObserver.h */,
+				8BD280361869269400AB9A82 /* CDProgressObserver.m */,
+			);
+			name = Progress;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

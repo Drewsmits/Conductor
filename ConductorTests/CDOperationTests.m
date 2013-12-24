@@ -59,11 +59,7 @@
     NSOperationQueue *queue = [[NSOperationQueue alloc] init];
     [queue addOperation:op];
     
-    NSDate *loopUntil = [NSDate dateWithTimeIntervalSinceNow:0.2];
-    while (hasFinished == NO) {
-        [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode
-                                 beforeDate:loopUntil];
-    }    
+    WAIT_ON_BOOL(hasFinished);
     
     XCTAssertTrue(hasFinished, @"Test operation should run");
     XCTAssertTrue(op.isFinished, @"Test operation should be finished");
