@@ -26,7 +26,7 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void (^CDProgressObserverProgressBlock)(float progress);
+typedef void (^CDProgressObserverProgressBlock)(CGFloat progress);
 typedef void (^CDProgressObserverCompletionBlock)(void);
 
 @interface CDProgressObserver : NSObject
