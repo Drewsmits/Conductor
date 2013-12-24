@@ -7,426 +7,261 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DB01C8641706070000D34217 /* CDKVOOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = DB01C8621706070000D34217 /* CDKVOOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DB01C8651706070000D34217 /* CDKVOOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DB01C8631706070000D34217 /* CDKVOOperation.m */; };
-		DB39B5C415BF2F7C0046FD96 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB39B5C315BF2F7C0046FD96 /* UIKit.framework */; };
-		DB4F2D911551D6A200216AB9 /* CDLongRunningTestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4F2D901551D6A200216AB9 /* CDLongRunningTestOperation.m */; };
-		DB4F2D941551E54400216AB9 /* CDOperationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4F2D931551E54400216AB9 /* CDOperationTests.m */; };
-		DB4F2D971551E57700216AB9 /* CDOperationQueueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4F2D961551E57700216AB9 /* CDOperationQueueTests.m */; };
-		DB4F2D9B1551F60200216AB9 /* CDOperationQueueProgressWatcherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4F2D9A1551F60200216AB9 /* CDOperationQueueProgressWatcherTests.m */; };
-		DB4F2D9D155320EF00216AB9 /* ConductorLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = DB4F2D9C155320EF00216AB9 /* ConductorLogging.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DB4F2DA01553329900216AB9 /* CDTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4F2D9F1553329900216AB9 /* CDTest.m */; };
-		DB6BABC6154F69FC004842D2 /* CDProgressObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = DB6BABC4154F69FC004842D2 /* CDProgressObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DB6BABC7154F69FC004842D2 /* CDProgressObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6BABC5154F69FC004842D2 /* CDProgressObserver.m */; };
-		DB737206176972010020618B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBD17294167948B80019FF3D /* CoreGraphics.framework */; };
-		DB776C42160E63D900217625 /* CDOperationQueueMaxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB776C41160E63D900217625 /* CDOperationQueueMaxTests.m */; };
-		DB83D19E1451F1B200D94890 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB83D19D1451F1B200D94890 /* Foundation.framework */; };
-		DB83D1A41451F1B200D94890 /* CDQueueController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB83D1A31451F1B200D94890 /* CDQueueController.m */; };
-		DB83D1AC1451F1B200D94890 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB83D1AB1451F1B200D94890 /* SenTestingKit.framework */; };
-		DB83D1AF1451F1B200D94890 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB83D19D1451F1B200D94890 /* Foundation.framework */; };
-		DB83D1B21451F1B200D94890 /* libConductor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB83D19A1451F1B200D94890 /* libConductor.a */; };
-		DB83D1B81451F1B200D94890 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DB83D1B61451F1B200D94890 /* InfoPlist.strings */; };
-		DB83D1BB1451F1B200D94890 /* ConductorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB83D1BA1451F1B200D94890 /* ConductorTests.m */; };
-		DB83D1DA1451F89E00D94890 /* CDOperationQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = DB83D1D81451F89E00D94890 /* CDOperationQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DB83D1DB1451F89E00D94890 /* CDOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = DB83D1D91451F89E00D94890 /* CDOperationQueue.m */; };
-		DB83D1DE1451FB1900D94890 /* CDOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = DB83D1DC1451FB1900D94890 /* CDOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DB83D1DF1451FB1900D94890 /* CDOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DB83D1DD1451FB1900D94890 /* CDOperation.m */; };
-		DB9F94D91598DE8300A97A05 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB9F94D81598DE8300A97A05 /* CoreData.framework */; };
-		DB9F94DD1598DEC300A97A05 /* CDCoreDataOperationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9F94DC1598DEC300A97A05 /* CDCoreDataOperationTests.m */; };
-		DB9F94E01598E06500A97A05 /* ConductorTestDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DB9F94DE1598E06500A97A05 /* ConductorTestDataModel.xcdatamodeld */; };
-		DB9F94E41598E38D00A97A05 /* CDTestCoreDataOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9F94E31598E38D00A97A05 /* CDTestCoreDataOperation.m */; };
-		DBA5F95514560E1D00EBFF68 /* CDQueueController.h in Headers */ = {isa = PBXBuildFile; fileRef = DB83D1A21451F1B200D94890 /* CDQueueController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DBD17292167948B80019FF3D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB39B5C315BF2F7C0046FD96 /* UIKit.framework */; };
-		DBD17293167948B80019FF3D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB83D19D1451F1B200D94890 /* Foundation.framework */; };
-		DBD17295167948B80019FF3D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBD17294167948B80019FF3D /* CoreGraphics.framework */; };
-		DBD1729B167948B80019FF3D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DBD17299167948B80019FF3D /* InfoPlist.strings */; };
-		DBD1729D167948B80019FF3D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD1729C167948B80019FF3D /* main.m */; };
-		DBD172A1167948B80019FF3D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD172A0167948B80019FF3D /* AppDelegate.m */; };
-		DBD172A3167948B80019FF3D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DBD172A2167948B80019FF3D /* Default.png */; };
-		DBD172A5167948B80019FF3D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBD172A4167948B80019FF3D /* Default@2x.png */; };
-		DBD172A7167948B80019FF3D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBD172A6167948B80019FF3D /* Default-568h@2x.png */; };
-		DBD172AA167948B80019FF3D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBD172A8167948B80019FF3D /* MainStoryboard.storyboard */; };
-		DBD172AD167948B80019FF3D /* CDMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD172AC167948B80019FF3D /* CDMainViewController.m */; };
-		DBD172B516794A650019FF3D /* CDSuperLongTaskOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD172B416794A650019FF3D /* CDSuperLongTaskOperation.m */; };
-		DBD172B816794B280019FF3D /* libConductor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB83D19A1451F1B200D94890 /* libConductor.a */; };
-		DBD172B916794B3A0019FF3D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB9F94D81598DE8300A97A05 /* CoreData.framework */; };
-		DBDA920F16FB9E2A00916FE4 /* Conductor.h in Headers */ = {isa = PBXBuildFile; fileRef = DBDA920E16FB9E2A00916FE4 /* Conductor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DBDA921216FB9EA400916FE4 /* CDQueueController+State.h in Headers */ = {isa = PBXBuildFile; fileRef = DBDA921016FB9EA400916FE4 /* CDQueueController+State.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DBDA921316FB9EA400916FE4 /* CDQueueController+State.m in Sources */ = {isa = PBXBuildFile; fileRef = DBDA921116FB9EA400916FE4 /* CDQueueController+State.m */; };
-		DBDA921616FB9FA300916FE4 /* CDQueueController+Test.h in Headers */ = {isa = PBXBuildFile; fileRef = DBDA921416FB9FA300916FE4 /* CDQueueController+Test.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DBDA921716FB9FA300916FE4 /* CDQueueController+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = DBDA921516FB9FA300916FE4 /* CDQueueController+Test.m */; };
-		DBDA921B16FBB5A700916FE4 /* OperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBDA921A16FBB5A700916FE4 /* OperationViewController.m */; };
-		DBDA921E16FBB5BC00916FE4 /* OperationView.m in Sources */ = {isa = PBXBuildFile; fileRef = DBDA921D16FBB5BC00916FE4 /* OperationView.m */; };
-		DBDA922016FBB6E400916FE4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBDA921F16FBB6E400916FE4 /* QuartzCore.framework */; };
-		DBDA922316FBBFAD00916FE4 /* CDOneSecondOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DBDA922216FBBFAD00916FE4 /* CDOneSecondOperation.m */; };
-		DBDB9729158EF35C004BB06F /* CDCoreDataOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = DBDB9727158EF35B004BB06F /* CDCoreDataOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DBDB972A158EF35C004BB06F /* CDCoreDataOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DBDB9728158EF35B004BB06F /* CDCoreDataOperation.m */; };
-		DBE4976816EBD80E00C4EF18 /* CDIsExecutingQueryOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE4976716EBD80E00C4EF18 /* CDIsExecutingQueryOperation.m */; };
-		DBFADED214524E6E00FD43FF /* CDTestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DBFADED114524E6E00FD43FF /* CDTestOperation.m */; };
+		8B4AAF70186926370001DCE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B4AAF6F186926370001DCE2 /* Foundation.framework */; };
+		8B4AAF7E186926370001DCE2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B4AAF7D186926370001DCE2 /* XCTest.framework */; };
+		8B4AAF7F186926370001DCE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B4AAF6F186926370001DCE2 /* Foundation.framework */; };
+		8B4AAF81186926370001DCE2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B4AAF80186926370001DCE2 /* UIKit.framework */; };
+		8B4AAF84186926370001DCE2 /* libConductor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B4AAF6C186926370001DCE2 /* libConductor.a */; };
+		8B4AAF8A186926370001DCE2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8B4AAF88186926370001DCE2 /* InfoPlist.strings */; };
+		8BD2803F1869269500AB9A82 /* CDCoreDataOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD2802E1869269400AB9A82 /* CDCoreDataOperation.m */; };
+		8BD280401869269500AB9A82 /* CDKVOOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD280301869269400AB9A82 /* CDKVOOperation.m */; };
+		8BD280411869269500AB9A82 /* CDOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD280321869269400AB9A82 /* CDOperation.m */; };
+		8BD280421869269500AB9A82 /* CDOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD280341869269400AB9A82 /* CDOperationQueue.m */; };
+		8BD280431869269500AB9A82 /* CDProgressObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD280361869269400AB9A82 /* CDProgressObserver.m */; };
+		8BD280441869269500AB9A82 /* CDQueueController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD280381869269400AB9A82 /* CDQueueController.m */; };
+		8BD280451869269500AB9A82 /* CDQueueController+State.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD2803A1869269400AB9A82 /* CDQueueController+State.m */; };
+		8BD280461869269500AB9A82 /* CDQueueController+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD2803C1869269400AB9A82 /* CDQueueController+Test.m */; };
+		8BD28047186926B800AB9A82 /* CDCoreDataOperation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8BD2802D1869269400AB9A82 /* CDCoreDataOperation.h */; };
+		8BD28048186926B800AB9A82 /* CDKVOOperation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8BD2802F1869269400AB9A82 /* CDKVOOperation.h */; };
+		8BD28049186926B800AB9A82 /* CDOperation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8BD280311869269400AB9A82 /* CDOperation.h */; };
+		8BD2804A186926B800AB9A82 /* CDOperationQueue.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8BD280331869269400AB9A82 /* CDOperationQueue.h */; };
+		8BD2804B186926B800AB9A82 /* CDProgressObserver.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8BD280351869269400AB9A82 /* CDProgressObserver.h */; };
+		8BD2804C186926B800AB9A82 /* CDQueueController+State.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8BD280391869269400AB9A82 /* CDQueueController+State.h */; };
+		8BD2804D186926B800AB9A82 /* CDQueueController+Test.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8BD2803B1869269400AB9A82 /* CDQueueController+Test.h */; };
+		8BD2804E186926B800AB9A82 /* CDQueueController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8BD280371869269400AB9A82 /* CDQueueController.h */; };
+		8BD2804F186926B800AB9A82 /* Conductor.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8BD2803D1869269400AB9A82 /* Conductor.h */; };
+		8BD28052186926F300AB9A82 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BD28051186926F300AB9A82 /* CoreGraphics.framework */; };
+		8BD2808E186927ED00AB9A82 /* CDCoreDataOperationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD28078186927ED00AB9A82 /* CDCoreDataOperationTests.m */; };
+		8BD2808F186927ED00AB9A82 /* CDLongRunningTestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD2807A186927ED00AB9A82 /* CDLongRunningTestOperation.m */; };
+		8BD28090186927ED00AB9A82 /* CDOperationQueueMaxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD2807C186927ED00AB9A82 /* CDOperationQueueMaxTests.m */; };
+		8BD28091186927ED00AB9A82 /* CDOperationQueueProgressWatcherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD2807E186927ED00AB9A82 /* CDOperationQueueProgressWatcherTests.m */; };
+		8BD28092186927ED00AB9A82 /* CDOperationQueueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD28080186927ED00AB9A82 /* CDOperationQueueTests.m */; };
+		8BD28093186927ED00AB9A82 /* CDOperationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD28082186927ED00AB9A82 /* CDOperationTests.m */; };
+		8BD28094186927ED00AB9A82 /* CDTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD28084186927ED00AB9A82 /* CDTest.m */; };
+		8BD28095186927ED00AB9A82 /* CDTestCoreDataOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD28086186927ED00AB9A82 /* CDTestCoreDataOperation.m */; };
+		8BD28096186927ED00AB9A82 /* CDTestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD28088186927ED00AB9A82 /* CDTestOperation.m */; };
+		8BD28097186927ED00AB9A82 /* ConductorTestDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8BD28089186927ED00AB9A82 /* ConductorTestDataModel.xcdatamodeld */; };
+		8BD28098186927ED00AB9A82 /* ConductorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD2808D186927ED00AB9A82 /* ConductorTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		DB83D1B01451F1B200D94890 /* PBXContainerItemProxy */ = {
+		8B4AAF82186926370001DCE2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = DB83D18F1451F19E00D94890 /* Project object */;
+			containerPortal = 8B4AAF64186926370001DCE2 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DB83D1991451F1B200D94890;
-			remoteInfo = Conductor;
-		};
-		DBD172B616794B220019FF3D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DB83D18F1451F19E00D94890 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DB83D1991451F1B200D94890;
+			remoteGlobalIDString = 8B4AAF6B186926370001DCE2;
 			remoteInfo = Conductor;
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8B4AAF6A186926370001DCE2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				8BD28047186926B800AB9A82 /* CDCoreDataOperation.h in CopyFiles */,
+				8BD28048186926B800AB9A82 /* CDKVOOperation.h in CopyFiles */,
+				8BD28049186926B800AB9A82 /* CDOperation.h in CopyFiles */,
+				8BD2804A186926B800AB9A82 /* CDOperationQueue.h in CopyFiles */,
+				8BD2804B186926B800AB9A82 /* CDProgressObserver.h in CopyFiles */,
+				8BD2804C186926B800AB9A82 /* CDQueueController+State.h in CopyFiles */,
+				8BD2804D186926B800AB9A82 /* CDQueueController+Test.h in CopyFiles */,
+				8BD2804E186926B800AB9A82 /* CDQueueController.h in CopyFiles */,
+				8BD2804F186926B800AB9A82 /* Conductor.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		DB01C8621706070000D34217 /* CDKVOOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDKVOOperation.h; sourceTree = "<group>"; };
-		DB01C8631706070000D34217 /* CDKVOOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDKVOOperation.m; sourceTree = "<group>"; };
-		DB39B5C315BF2F7C0046FD96 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		DB4F2D8F1551D6A200216AB9 /* CDLongRunningTestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDLongRunningTestOperation.h; sourceTree = "<group>"; };
-		DB4F2D901551D6A200216AB9 /* CDLongRunningTestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDLongRunningTestOperation.m; sourceTree = "<group>"; };
-		DB4F2D921551E54400216AB9 /* CDOperationTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDOperationTests.h; sourceTree = "<group>"; };
-		DB4F2D931551E54400216AB9 /* CDOperationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDOperationTests.m; sourceTree = "<group>"; };
-		DB4F2D951551E57700216AB9 /* CDOperationQueueTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDOperationQueueTests.h; sourceTree = "<group>"; };
-		DB4F2D961551E57700216AB9 /* CDOperationQueueTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDOperationQueueTests.m; sourceTree = "<group>"; };
-		DB4F2D991551F60200216AB9 /* CDOperationQueueProgressWatcherTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDOperationQueueProgressWatcherTests.h; sourceTree = "<group>"; };
-		DB4F2D9A1551F60200216AB9 /* CDOperationQueueProgressWatcherTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDOperationQueueProgressWatcherTests.m; sourceTree = "<group>"; };
-		DB4F2D9C155320EF00216AB9 /* ConductorLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConductorLogging.h; sourceTree = "<group>"; };
-		DB4F2D9E1553329900216AB9 /* CDTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDTest.h; sourceTree = "<group>"; };
-		DB4F2D9F1553329900216AB9 /* CDTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDTest.m; sourceTree = "<group>"; };
-		DB6BABC4154F69FC004842D2 /* CDProgressObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDProgressObserver.h; sourceTree = "<group>"; };
-		DB6BABC5154F69FC004842D2 /* CDProgressObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDProgressObserver.m; sourceTree = "<group>"; };
-		DB776C40160E63D900217625 /* CDOperationQueueMaxTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDOperationQueueMaxTests.h; sourceTree = "<group>"; };
-		DB776C41160E63D900217625 /* CDOperationQueueMaxTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDOperationQueueMaxTests.m; sourceTree = "<group>"; };
-		DB83D19A1451F1B200D94890 /* libConductor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libConductor.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB83D19D1451F1B200D94890 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		DB83D1A11451F1B200D94890 /* Conductor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Conductor-Prefix.pch"; sourceTree = "<group>"; };
-		DB83D1A21451F1B200D94890 /* CDQueueController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDQueueController.h; sourceTree = "<group>"; };
-		DB83D1A31451F1B200D94890 /* CDQueueController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDQueueController.m; sourceTree = "<group>"; };
-		DB83D1AA1451F1B200D94890 /* ConductorTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConductorTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB83D1AB1451F1B200D94890 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		DB83D1B51451F1B200D94890 /* ConductorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ConductorTests-Info.plist"; sourceTree = "<group>"; };
-		DB83D1B71451F1B200D94890 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		DB83D1B91451F1B200D94890 /* ConductorTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConductorTests.h; sourceTree = "<group>"; };
-		DB83D1BA1451F1B200D94890 /* ConductorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConductorTests.m; sourceTree = "<group>"; };
-		DB83D1D81451F89E00D94890 /* CDOperationQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDOperationQueue.h; sourceTree = "<group>"; };
-		DB83D1D91451F89E00D94890 /* CDOperationQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDOperationQueue.m; sourceTree = "<group>"; };
-		DB83D1DC1451FB1900D94890 /* CDOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDOperation.h; sourceTree = "<group>"; };
-		DB83D1DD1451FB1900D94890 /* CDOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDOperation.m; sourceTree = "<group>"; };
-		DB9F94D81598DE8300A97A05 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		DB9F94DB1598DEC300A97A05 /* CDCoreDataOperationTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDCoreDataOperationTests.h; sourceTree = "<group>"; };
-		DB9F94DC1598DEC300A97A05 /* CDCoreDataOperationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDCoreDataOperationTests.m; sourceTree = "<group>"; };
-		DB9F94DF1598E06500A97A05 /* ConductorTestDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ConductorTestDataModel.xcdatamodel; sourceTree = "<group>"; };
-		DB9F94E11598E15A00A97A05 /* ConductorTestMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConductorTestMacros.h; sourceTree = "<group>"; };
-		DB9F94E21598E38D00A97A05 /* CDTestCoreDataOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDTestCoreDataOperation.h; sourceTree = "<group>"; };
-		DB9F94E31598E38D00A97A05 /* CDTestCoreDataOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDTestCoreDataOperation.m; sourceTree = "<group>"; };
-		DBD17290167948B80019FF3D /* ConductorApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConductorApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DBD17294167948B80019FF3D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		DBD17298167948B80019FF3D /* ConductorApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ConductorApp-Info.plist"; sourceTree = "<group>"; };
-		DBD1729A167948B80019FF3D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		DBD1729C167948B80019FF3D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DBD1729E167948B80019FF3D /* ConductorApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ConductorApp-Prefix.pch"; sourceTree = "<group>"; };
-		DBD1729F167948B80019FF3D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		DBD172A0167948B80019FF3D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DBD172A2167948B80019FF3D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		DBD172A4167948B80019FF3D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		DBD172A6167948B80019FF3D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		DBD172A9167948B80019FF3D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		DBD172AB167948B80019FF3D /* CDMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDMainViewController.h; sourceTree = "<group>"; };
-		DBD172AC167948B80019FF3D /* CDMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDMainViewController.m; sourceTree = "<group>"; };
-		DBD172B316794A650019FF3D /* CDSuperLongTaskOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDSuperLongTaskOperation.h; sourceTree = "<group>"; };
-		DBD172B416794A650019FF3D /* CDSuperLongTaskOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDSuperLongTaskOperation.m; sourceTree = "<group>"; };
-		DBDA920E16FB9E2A00916FE4 /* Conductor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Conductor.h; sourceTree = "<group>"; };
-		DBDA921016FB9EA400916FE4 /* CDQueueController+State.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CDQueueController+State.h"; sourceTree = "<group>"; };
-		DBDA921116FB9EA400916FE4 /* CDQueueController+State.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CDQueueController+State.m"; sourceTree = "<group>"; };
-		DBDA921416FB9FA300916FE4 /* CDQueueController+Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CDQueueController+Test.h"; sourceTree = "<group>"; };
-		DBDA921516FB9FA300916FE4 /* CDQueueController+Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CDQueueController+Test.m"; sourceTree = "<group>"; };
-		DBDA921916FBB5A700916FE4 /* OperationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperationViewController.h; sourceTree = "<group>"; };
-		DBDA921A16FBB5A700916FE4 /* OperationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperationViewController.m; sourceTree = "<group>"; };
-		DBDA921C16FBB5BC00916FE4 /* OperationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperationView.h; sourceTree = "<group>"; };
-		DBDA921D16FBB5BC00916FE4 /* OperationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperationView.m; sourceTree = "<group>"; };
-		DBDA921F16FBB6E400916FE4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		DBDA922116FBBFAD00916FE4 /* CDOneSecondOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDOneSecondOperation.h; sourceTree = "<group>"; };
-		DBDA922216FBBFAD00916FE4 /* CDOneSecondOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDOneSecondOperation.m; sourceTree = "<group>"; };
-		DBDB9727158EF35B004BB06F /* CDCoreDataOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDCoreDataOperation.h; sourceTree = "<group>"; };
-		DBDB9728158EF35B004BB06F /* CDCoreDataOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDCoreDataOperation.m; sourceTree = "<group>"; };
-		DBE4976616EBD80E00C4EF18 /* CDIsExecutingQueryOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDIsExecutingQueryOperation.h; sourceTree = "<group>"; };
-		DBE4976716EBD80E00C4EF18 /* CDIsExecutingQueryOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDIsExecutingQueryOperation.m; sourceTree = "<group>"; };
-		DBFADED014524E6E00FD43FF /* CDTestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDTestOperation.h; sourceTree = "<group>"; };
-		DBFADED114524E6E00FD43FF /* CDTestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDTestOperation.m; sourceTree = "<group>"; };
+		8B4AAF6C186926370001DCE2 /* libConductor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libConductor.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B4AAF6F186926370001DCE2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8B4AAF73186926370001DCE2 /* Conductor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Conductor-Prefix.pch"; sourceTree = "<group>"; };
+		8B4AAF7C186926370001DCE2 /* ConductorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConductorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B4AAF7D186926370001DCE2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		8B4AAF80186926370001DCE2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		8B4AAF87186926370001DCE2 /* ConductorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ConductorTests-Info.plist"; sourceTree = "<group>"; };
+		8B4AAF89186926370001DCE2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8BD2802D1869269400AB9A82 /* CDCoreDataOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDCoreDataOperation.h; sourceTree = "<group>"; };
+		8BD2802E1869269400AB9A82 /* CDCoreDataOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDCoreDataOperation.m; sourceTree = "<group>"; };
+		8BD2802F1869269400AB9A82 /* CDKVOOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDKVOOperation.h; sourceTree = "<group>"; };
+		8BD280301869269400AB9A82 /* CDKVOOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDKVOOperation.m; sourceTree = "<group>"; };
+		8BD280311869269400AB9A82 /* CDOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDOperation.h; sourceTree = "<group>"; };
+		8BD280321869269400AB9A82 /* CDOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDOperation.m; sourceTree = "<group>"; };
+		8BD280331869269400AB9A82 /* CDOperationQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDOperationQueue.h; sourceTree = "<group>"; };
+		8BD280341869269400AB9A82 /* CDOperationQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDOperationQueue.m; sourceTree = "<group>"; };
+		8BD280351869269400AB9A82 /* CDProgressObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDProgressObserver.h; sourceTree = "<group>"; };
+		8BD280361869269400AB9A82 /* CDProgressObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDProgressObserver.m; sourceTree = "<group>"; };
+		8BD280371869269400AB9A82 /* CDQueueController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDQueueController.h; sourceTree = "<group>"; };
+		8BD280381869269400AB9A82 /* CDQueueController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDQueueController.m; sourceTree = "<group>"; };
+		8BD280391869269400AB9A82 /* CDQueueController+State.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CDQueueController+State.h"; sourceTree = "<group>"; };
+		8BD2803A1869269400AB9A82 /* CDQueueController+State.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CDQueueController+State.m"; sourceTree = "<group>"; };
+		8BD2803B1869269400AB9A82 /* CDQueueController+Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CDQueueController+Test.h"; sourceTree = "<group>"; };
+		8BD2803C1869269400AB9A82 /* CDQueueController+Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CDQueueController+Test.m"; sourceTree = "<group>"; };
+		8BD2803D1869269400AB9A82 /* Conductor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Conductor.h; sourceTree = "<group>"; };
+		8BD28051186926F300AB9A82 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8BD28077186927ED00AB9A82 /* CDCoreDataOperationTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDCoreDataOperationTests.h; sourceTree = "<group>"; };
+		8BD28078186927ED00AB9A82 /* CDCoreDataOperationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDCoreDataOperationTests.m; sourceTree = "<group>"; };
+		8BD28079186927ED00AB9A82 /* CDLongRunningTestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDLongRunningTestOperation.h; sourceTree = "<group>"; };
+		8BD2807A186927ED00AB9A82 /* CDLongRunningTestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDLongRunningTestOperation.m; sourceTree = "<group>"; };
+		8BD2807B186927ED00AB9A82 /* CDOperationQueueMaxTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDOperationQueueMaxTests.h; sourceTree = "<group>"; };
+		8BD2807C186927ED00AB9A82 /* CDOperationQueueMaxTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDOperationQueueMaxTests.m; sourceTree = "<group>"; };
+		8BD2807D186927ED00AB9A82 /* CDOperationQueueProgressWatcherTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDOperationQueueProgressWatcherTests.h; sourceTree = "<group>"; };
+		8BD2807E186927ED00AB9A82 /* CDOperationQueueProgressWatcherTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDOperationQueueProgressWatcherTests.m; sourceTree = "<group>"; };
+		8BD2807F186927ED00AB9A82 /* CDOperationQueueTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDOperationQueueTests.h; sourceTree = "<group>"; };
+		8BD28080186927ED00AB9A82 /* CDOperationQueueTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDOperationQueueTests.m; sourceTree = "<group>"; };
+		8BD28081186927ED00AB9A82 /* CDOperationTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDOperationTests.h; sourceTree = "<group>"; };
+		8BD28082186927ED00AB9A82 /* CDOperationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDOperationTests.m; sourceTree = "<group>"; };
+		8BD28083186927ED00AB9A82 /* CDTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDTest.h; sourceTree = "<group>"; };
+		8BD28084186927ED00AB9A82 /* CDTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDTest.m; sourceTree = "<group>"; };
+		8BD28085186927ED00AB9A82 /* CDTestCoreDataOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDTestCoreDataOperation.h; sourceTree = "<group>"; };
+		8BD28086186927ED00AB9A82 /* CDTestCoreDataOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDTestCoreDataOperation.m; sourceTree = "<group>"; };
+		8BD28087186927ED00AB9A82 /* CDTestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDTestOperation.h; sourceTree = "<group>"; };
+		8BD28088186927ED00AB9A82 /* CDTestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDTestOperation.m; sourceTree = "<group>"; };
+		8BD2808A186927ED00AB9A82 /* ConductorTestDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ConductorTestDataModel.xcdatamodel; sourceTree = "<group>"; };
+		8BD2808B186927ED00AB9A82 /* ConductorTestMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConductorTestMacros.h; sourceTree = "<group>"; };
+		8BD2808C186927ED00AB9A82 /* ConductorTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConductorTests.h; sourceTree = "<group>"; };
+		8BD2808D186927ED00AB9A82 /* ConductorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConductorTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DB83D1971451F1B200D94890 /* Frameworks */ = {
+		8B4AAF69186926370001DCE2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB737206176972010020618B /* CoreGraphics.framework in Frameworks */,
-				DB83D19E1451F1B200D94890 /* Foundation.framework in Frameworks */,
+				8B4AAF70186926370001DCE2 /* Foundation.framework in Frameworks */,
+				8BD28052186926F300AB9A82 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DB83D1A61451F1B200D94890 /* Frameworks */ = {
+		8B4AAF79186926370001DCE2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB39B5C415BF2F7C0046FD96 /* UIKit.framework in Frameworks */,
-				DB83D1AC1451F1B200D94890 /* SenTestingKit.framework in Frameworks */,
-				DB83D1AF1451F1B200D94890 /* Foundation.framework in Frameworks */,
-				DB9F94D91598DE8300A97A05 /* CoreData.framework in Frameworks */,
-				DB83D1B21451F1B200D94890 /* libConductor.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DBD1728D167948B80019FF3D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DBDA922016FBB6E400916FE4 /* QuartzCore.framework in Frameworks */,
-				DBD172B916794B3A0019FF3D /* CoreData.framework in Frameworks */,
-				DBD172B816794B280019FF3D /* libConductor.a in Frameworks */,
-				DBD17292167948B80019FF3D /* UIKit.framework in Frameworks */,
-				DBD17293167948B80019FF3D /* Foundation.framework in Frameworks */,
-				DBD17295167948B80019FF3D /* CoreGraphics.framework in Frameworks */,
+				8B4AAF7E186926370001DCE2 /* XCTest.framework in Frameworks */,
+				8B4AAF84186926370001DCE2 /* libConductor.a in Frameworks */,
+				8B4AAF81186926370001DCE2 /* UIKit.framework in Frameworks */,
+				8B4AAF7F186926370001DCE2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DB01C8661706071500D34217 /* Operation */ = {
+		8B4AAF63186926370001DCE2 = {
 			isa = PBXGroup;
 			children = (
-				DBDB9727158EF35B004BB06F /* CDCoreDataOperation.h */,
-				DBDB9728158EF35B004BB06F /* CDCoreDataOperation.m */,
-				DB83D1DC1451FB1900D94890 /* CDOperation.h */,
-				DB83D1DD1451FB1900D94890 /* CDOperation.m */,
-				DB01C8621706070000D34217 /* CDKVOOperation.h */,
-				DB01C8631706070000D34217 /* CDKVOOperation.m */,
-			);
-			name = Operation;
-			sourceTree = "<group>";
-		};
-		DB01C8671706072800D34217 /* Queue Controller */ = {
-			isa = PBXGroup;
-			children = (
-				DBDA921016FB9EA400916FE4 /* CDQueueController+State.h */,
-				DBDA921116FB9EA400916FE4 /* CDQueueController+State.m */,
-				DBDA921416FB9FA300916FE4 /* CDQueueController+Test.h */,
-				DBDA921516FB9FA300916FE4 /* CDQueueController+Test.m */,
-				DB83D1A21451F1B200D94890 /* CDQueueController.h */,
-				DB83D1A31451F1B200D94890 /* CDQueueController.m */,
-			);
-			name = "Queue Controller";
-			sourceTree = "<group>";
-		};
-		DB4F2D981551E5FD00216AB9 /* Test Classes */ = {
-			isa = PBXGroup;
-			children = (
-				DBFADED014524E6E00FD43FF /* CDTestOperation.h */,
-				DBFADED114524E6E00FD43FF /* CDTestOperation.m */,
-				DB4F2D8F1551D6A200216AB9 /* CDLongRunningTestOperation.h */,
-				DB4F2D901551D6A200216AB9 /* CDLongRunningTestOperation.m */,
-				DB9F94E21598E38D00A97A05 /* CDTestCoreDataOperation.h */,
-				DB9F94E31598E38D00A97A05 /* CDTestCoreDataOperation.m */,
-			);
-			name = "Test Classes";
-			sourceTree = "<group>";
-		};
-		DB737204176969480020618B /* Queue */ = {
-			isa = PBXGroup;
-			children = (
-				DB83D1D81451F89E00D94890 /* CDOperationQueue.h */,
-				DB83D1D91451F89E00D94890 /* CDOperationQueue.m */,
-			);
-			name = Queue;
-			sourceTree = "<group>";
-		};
-		DB7372051769696C0020618B /* Progress */ = {
-			isa = PBXGroup;
-			children = (
-				DB6BABC4154F69FC004842D2 /* CDProgressObserver.h */,
-				DB6BABC5154F69FC004842D2 /* CDProgressObserver.m */,
-			);
-			name = Progress;
-			sourceTree = "<group>";
-		};
-		DB83D18D1451F19E00D94890 = {
-			isa = PBXGroup;
-			children = (
-				DB83D19F1451F1B200D94890 /* Conductor */,
-				DB83D1B31451F1B200D94890 /* ConductorTests */,
-				DBD17296167948B80019FF3D /* ConductorApp */,
-				DB83D19C1451F1B200D94890 /* Frameworks */,
-				DB83D19B1451F1B200D94890 /* Products */,
+				8B4AAF71186926370001DCE2 /* Conductor */,
+				8B4AAF85186926370001DCE2 /* ConductorTests */,
+				8B4AAF6E186926370001DCE2 /* Frameworks */,
+				8B4AAF6D186926370001DCE2 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		DB83D19B1451F1B200D94890 /* Products */ = {
+		8B4AAF6D186926370001DCE2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DB83D19A1451F1B200D94890 /* libConductor.a */,
-				DB83D1AA1451F1B200D94890 /* ConductorTests.octest */,
-				DBD17290167948B80019FF3D /* ConductorApp.app */,
+				8B4AAF6C186926370001DCE2 /* libConductor.a */,
+				8B4AAF7C186926370001DCE2 /* ConductorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DB83D19C1451F1B200D94890 /* Frameworks */ = {
+		8B4AAF6E186926370001DCE2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DBDA921F16FBB6E400916FE4 /* QuartzCore.framework */,
-				DB39B5C315BF2F7C0046FD96 /* UIKit.framework */,
-				DB9F94D81598DE8300A97A05 /* CoreData.framework */,
-				DB83D19D1451F1B200D94890 /* Foundation.framework */,
-				DB83D1AB1451F1B200D94890 /* SenTestingKit.framework */,
-				DBD17294167948B80019FF3D /* CoreGraphics.framework */,
+				8BD28051186926F300AB9A82 /* CoreGraphics.framework */,
+				8B4AAF6F186926370001DCE2 /* Foundation.framework */,
+				8B4AAF7D186926370001DCE2 /* XCTest.framework */,
+				8B4AAF80186926370001DCE2 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DB83D19F1451F1B200D94890 /* Conductor */ = {
+		8B4AAF71186926370001DCE2 /* Conductor */ = {
 			isa = PBXGroup;
 			children = (
-				DBDA920E16FB9E2A00916FE4 /* Conductor.h */,
-				DB4F2D9C155320EF00216AB9 /* ConductorLogging.h */,
-				DB01C8661706071500D34217 /* Operation */,
-				DB7372051769696C0020618B /* Progress */,
-				DB737204176969480020618B /* Queue */,
-				DB01C8671706072800D34217 /* Queue Controller */,
-				DB83D1A01451F1B200D94890 /* Supporting Files */,
+				8BD2802D1869269400AB9A82 /* CDCoreDataOperation.h */,
+				8BD2802E1869269400AB9A82 /* CDCoreDataOperation.m */,
+				8BD2802F1869269400AB9A82 /* CDKVOOperation.h */,
+				8BD280301869269400AB9A82 /* CDKVOOperation.m */,
+				8BD280311869269400AB9A82 /* CDOperation.h */,
+				8BD280321869269400AB9A82 /* CDOperation.m */,
+				8BD280331869269400AB9A82 /* CDOperationQueue.h */,
+				8BD280341869269400AB9A82 /* CDOperationQueue.m */,
+				8BD280351869269400AB9A82 /* CDProgressObserver.h */,
+				8BD280361869269400AB9A82 /* CDProgressObserver.m */,
+				8BD280391869269400AB9A82 /* CDQueueController+State.h */,
+				8BD2803A1869269400AB9A82 /* CDQueueController+State.m */,
+				8BD2803B1869269400AB9A82 /* CDQueueController+Test.h */,
+				8BD2803C1869269400AB9A82 /* CDQueueController+Test.m */,
+				8BD280371869269400AB9A82 /* CDQueueController.h */,
+				8BD280381869269400AB9A82 /* CDQueueController.m */,
+				8BD2803D1869269400AB9A82 /* Conductor.h */,
+				8B4AAF72186926370001DCE2 /* Supporting Files */,
 			);
 			path = Conductor;
 			sourceTree = "<group>";
 		};
-		DB83D1A01451F1B200D94890 /* Supporting Files */ = {
+		8B4AAF72186926370001DCE2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				DB83D1A11451F1B200D94890 /* Conductor-Prefix.pch */,
+				8B4AAF73186926370001DCE2 /* Conductor-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		DB83D1B31451F1B200D94890 /* ConductorTests */ = {
+		8B4AAF85186926370001DCE2 /* ConductorTests */ = {
 			isa = PBXGroup;
 			children = (
-				DB4F2D9E1553329900216AB9 /* CDTest.h */,
-				DB4F2D9F1553329900216AB9 /* CDTest.m */,
-				DB83D1B91451F1B200D94890 /* ConductorTests.h */,
-				DB83D1BA1451F1B200D94890 /* ConductorTests.m */,
-				DB4F2D951551E57700216AB9 /* CDOperationQueueTests.h */,
-				DB4F2D961551E57700216AB9 /* CDOperationQueueTests.m */,
-				DB776C40160E63D900217625 /* CDOperationQueueMaxTests.h */,
-				DB776C41160E63D900217625 /* CDOperationQueueMaxTests.m */,
-				DB4F2D921551E54400216AB9 /* CDOperationTests.h */,
-				DB4F2D931551E54400216AB9 /* CDOperationTests.m */,
-				DB4F2D991551F60200216AB9 /* CDOperationQueueProgressWatcherTests.h */,
-				DB4F2D9A1551F60200216AB9 /* CDOperationQueueProgressWatcherTests.m */,
-				DB9F94DB1598DEC300A97A05 /* CDCoreDataOperationTests.h */,
-				DB9F94DC1598DEC300A97A05 /* CDCoreDataOperationTests.m */,
-				DB9F94E11598E15A00A97A05 /* ConductorTestMacros.h */,
-				DB9F94DE1598E06500A97A05 /* ConductorTestDataModel.xcdatamodeld */,
-				DB4F2D981551E5FD00216AB9 /* Test Classes */,
-				DB83D1B41451F1B200D94890 /* Supporting Files */,
+				8BD28077186927ED00AB9A82 /* CDCoreDataOperationTests.h */,
+				8BD28078186927ED00AB9A82 /* CDCoreDataOperationTests.m */,
+				8BD28079186927ED00AB9A82 /* CDLongRunningTestOperation.h */,
+				8BD2807A186927ED00AB9A82 /* CDLongRunningTestOperation.m */,
+				8BD2807B186927ED00AB9A82 /* CDOperationQueueMaxTests.h */,
+				8BD2807C186927ED00AB9A82 /* CDOperationQueueMaxTests.m */,
+				8BD2807D186927ED00AB9A82 /* CDOperationQueueProgressWatcherTests.h */,
+				8BD2807E186927ED00AB9A82 /* CDOperationQueueProgressWatcherTests.m */,
+				8BD2807F186927ED00AB9A82 /* CDOperationQueueTests.h */,
+				8BD28080186927ED00AB9A82 /* CDOperationQueueTests.m */,
+				8BD28081186927ED00AB9A82 /* CDOperationTests.h */,
+				8BD28082186927ED00AB9A82 /* CDOperationTests.m */,
+				8BD28083186927ED00AB9A82 /* CDTest.h */,
+				8BD28084186927ED00AB9A82 /* CDTest.m */,
+				8BD28085186927ED00AB9A82 /* CDTestCoreDataOperation.h */,
+				8BD28086186927ED00AB9A82 /* CDTestCoreDataOperation.m */,
+				8BD28087186927ED00AB9A82 /* CDTestOperation.h */,
+				8BD28088186927ED00AB9A82 /* CDTestOperation.m */,
+				8BD28089186927ED00AB9A82 /* ConductorTestDataModel.xcdatamodeld */,
+				8BD2808B186927ED00AB9A82 /* ConductorTestMacros.h */,
+				8BD2808C186927ED00AB9A82 /* ConductorTests.h */,
+				8BD2808D186927ED00AB9A82 /* ConductorTests.m */,
+				8B4AAF86186926370001DCE2 /* Supporting Files */,
 			);
 			path = ConductorTests;
 			sourceTree = "<group>";
 		};
-		DB83D1B41451F1B200D94890 /* Supporting Files */ = {
+		8B4AAF86186926370001DCE2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				DB83D1B51451F1B200D94890 /* ConductorTests-Info.plist */,
-				DB83D1B61451F1B200D94890 /* InfoPlist.strings */,
+				8B4AAF87186926370001DCE2 /* ConductorTests-Info.plist */,
+				8B4AAF88186926370001DCE2 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		DBD17296167948B80019FF3D /* ConductorApp */ = {
-			isa = PBXGroup;
-			children = (
-				DBDA921816FBB58C00916FE4 /* Operation */,
-				DBD1729F167948B80019FF3D /* AppDelegate.h */,
-				DBD172A0167948B80019FF3D /* AppDelegate.m */,
-				DBD172AB167948B80019FF3D /* CDMainViewController.h */,
-				DBD172AC167948B80019FF3D /* CDMainViewController.m */,
-				DBDA922416FBBFB600916FE4 /* Operations */,
-				DBD172A8167948B80019FF3D /* MainStoryboard.storyboard */,
-				DBD17297167948B80019FF3D /* Supporting Files */,
-			);
-			path = ConductorApp;
-			sourceTree = "<group>";
-		};
-		DBD17297167948B80019FF3D /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				DBD17298167948B80019FF3D /* ConductorApp-Info.plist */,
-				DBD17299167948B80019FF3D /* InfoPlist.strings */,
-				DBD1729C167948B80019FF3D /* main.m */,
-				DBD1729E167948B80019FF3D /* ConductorApp-Prefix.pch */,
-				DBD172A2167948B80019FF3D /* Default.png */,
-				DBD172A4167948B80019FF3D /* Default@2x.png */,
-				DBD172A6167948B80019FF3D /* Default-568h@2x.png */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		DBDA921816FBB58C00916FE4 /* Operation */ = {
-			isa = PBXGroup;
-			children = (
-				DBDA921916FBB5A700916FE4 /* OperationViewController.h */,
-				DBDA921A16FBB5A700916FE4 /* OperationViewController.m */,
-				DBDA921C16FBB5BC00916FE4 /* OperationView.h */,
-				DBDA921D16FBB5BC00916FE4 /* OperationView.m */,
-			);
-			name = Operation;
-			sourceTree = "<group>";
-		};
-		DBDA922416FBBFB600916FE4 /* Operations */ = {
-			isa = PBXGroup;
-			children = (
-				DBE4976616EBD80E00C4EF18 /* CDIsExecutingQueryOperation.h */,
-				DBE4976716EBD80E00C4EF18 /* CDIsExecutingQueryOperation.m */,
-				DBD172B316794A650019FF3D /* CDSuperLongTaskOperation.h */,
-				DBD172B416794A650019FF3D /* CDSuperLongTaskOperation.m */,
-				DBDA922116FBBFAD00916FE4 /* CDOneSecondOperation.h */,
-				DBDA922216FBBFAD00916FE4 /* CDOneSecondOperation.m */,
-			);
-			name = Operations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		DB83D1981451F1B200D94890 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DB83D1DA1451F89E00D94890 /* CDOperationQueue.h in Headers */,
-				DB83D1DE1451FB1900D94890 /* CDOperation.h in Headers */,
-				DBA5F95514560E1D00EBFF68 /* CDQueueController.h in Headers */,
-				DB6BABC6154F69FC004842D2 /* CDProgressObserver.h in Headers */,
-				DB4F2D9D155320EF00216AB9 /* ConductorLogging.h in Headers */,
-				DBDB9729158EF35C004BB06F /* CDCoreDataOperation.h in Headers */,
-				DBDA920F16FB9E2A00916FE4 /* Conductor.h in Headers */,
-				DBDA921216FB9EA400916FE4 /* CDQueueController+State.h in Headers */,
-				DBDA921616FB9FA300916FE4 /* CDQueueController+Test.h in Headers */,
-				DB01C8641706070000D34217 /* CDKVOOperation.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
-		DB83D1991451F1B200D94890 /* Conductor */ = {
+		8B4AAF6B186926370001DCE2 /* Conductor */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DB83D1BC1451F1B200D94890 /* Build configuration list for PBXNativeTarget "Conductor" */;
+			buildConfigurationList = 8B4AAF8F186926370001DCE2 /* Build configuration list for PBXNativeTarget "Conductor" */;
 			buildPhases = (
-				DB83D1961451F1B200D94890 /* Sources */,
-				DB83D1971451F1B200D94890 /* Frameworks */,
-				DB83D1981451F1B200D94890 /* Headers */,
+				8B4AAF68186926370001DCE2 /* Sources */,
+				8B4AAF69186926370001DCE2 /* Frameworks */,
+				8B4AAF6A186926370001DCE2 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -434,563 +269,296 @@
 			);
 			name = Conductor;
 			productName = Conductor;
-			productReference = DB83D19A1451F1B200D94890 /* libConductor.a */;
+			productReference = 8B4AAF6C186926370001DCE2 /* libConductor.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		DB83D1A91451F1B200D94890 /* ConductorTests */ = {
+		8B4AAF7B186926370001DCE2 /* ConductorTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DB83D1BF1451F1B200D94890 /* Build configuration list for PBXNativeTarget "ConductorTests" */;
+			buildConfigurationList = 8B4AAF92186926370001DCE2 /* Build configuration list for PBXNativeTarget "ConductorTests" */;
 			buildPhases = (
-				DB83D1A51451F1B200D94890 /* Sources */,
-				DB83D1A61451F1B200D94890 /* Frameworks */,
-				DB83D1A71451F1B200D94890 /* Resources */,
-				DB83D1A81451F1B200D94890 /* ShellScript */,
+				8B4AAF78186926370001DCE2 /* Sources */,
+				8B4AAF79186926370001DCE2 /* Frameworks */,
+				8B4AAF7A186926370001DCE2 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DB83D1B11451F1B200D94890 /* PBXTargetDependency */,
+				8B4AAF83186926370001DCE2 /* PBXTargetDependency */,
 			);
 			name = ConductorTests;
 			productName = ConductorTests;
-			productReference = DB83D1AA1451F1B200D94890 /* ConductorTests.octest */;
-			productType = "com.apple.product-type.bundle";
-		};
-		DBD1728F167948B80019FF3D /* ConductorApp */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DBD172B0167948B80019FF3D /* Build configuration list for PBXNativeTarget "ConductorApp" */;
-			buildPhases = (
-				DBD1728C167948B80019FF3D /* Sources */,
-				DBD1728D167948B80019FF3D /* Frameworks */,
-				DBD1728E167948B80019FF3D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DBD172B716794B220019FF3D /* PBXTargetDependency */,
-			);
-			name = ConductorApp;
-			productName = ConductorApp;
-			productReference = DBD17290167948B80019FF3D /* ConductorApp.app */;
-			productType = "com.apple.product-type.application";
+			productReference = 8B4AAF7C186926370001DCE2 /* ConductorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		DB83D18F1451F19E00D94890 /* Project object */ = {
+		8B4AAF64186926370001DCE2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0450;
-				ORGANIZATIONNAME = "Andrew B. Smith";
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Andrew Smith";
 			};
-			buildConfigurationList = DB83D1921451F19E00D94890 /* Build configuration list for PBXProject "Conductor" */;
+			buildConfigurationList = 8B4AAF67186926370001DCE2 /* Build configuration list for PBXProject "Conductor" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = DB83D18D1451F19E00D94890;
-			productRefGroup = DB83D19B1451F1B200D94890 /* Products */;
+			mainGroup = 8B4AAF63186926370001DCE2;
+			productRefGroup = 8B4AAF6D186926370001DCE2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DB83D1991451F1B200D94890 /* Conductor */,
-				DB83D1A91451F1B200D94890 /* ConductorTests */,
-				DBD1728F167948B80019FF3D /* ConductorApp */,
+				8B4AAF6B186926370001DCE2 /* Conductor */,
+				8B4AAF7B186926370001DCE2 /* ConductorTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		DB83D1A71451F1B200D94890 /* Resources */ = {
+		8B4AAF7A186926370001DCE2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB83D1B81451F1B200D94890 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DBD1728E167948B80019FF3D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DBD1729B167948B80019FF3D /* InfoPlist.strings in Resources */,
-				DBD172A3167948B80019FF3D /* Default.png in Resources */,
-				DBD172A5167948B80019FF3D /* Default@2x.png in Resources */,
-				DBD172A7167948B80019FF3D /* Default-568h@2x.png in Resources */,
-				DBD172AA167948B80019FF3D /* MainStoryboard.storyboard in Resources */,
+				8B4AAF8A186926370001DCE2 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		DB83D1A81451F1B200D94890 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		DB83D1961451F1B200D94890 /* Sources */ = {
+		8B4AAF68186926370001DCE2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB83D1A41451F1B200D94890 /* CDQueueController.m in Sources */,
-				DB83D1DB1451F89E00D94890 /* CDOperationQueue.m in Sources */,
-				DB83D1DF1451FB1900D94890 /* CDOperation.m in Sources */,
-				DB6BABC7154F69FC004842D2 /* CDProgressObserver.m in Sources */,
-				DBDB972A158EF35C004BB06F /* CDCoreDataOperation.m in Sources */,
-				DBDA921316FB9EA400916FE4 /* CDQueueController+State.m in Sources */,
-				DBDA921716FB9FA300916FE4 /* CDQueueController+Test.m in Sources */,
-				DB01C8651706070000D34217 /* CDKVOOperation.m in Sources */,
+				8BD2803F1869269500AB9A82 /* CDCoreDataOperation.m in Sources */,
+				8BD280451869269500AB9A82 /* CDQueueController+State.m in Sources */,
+				8BD280411869269500AB9A82 /* CDOperation.m in Sources */,
+				8BD280431869269500AB9A82 /* CDProgressObserver.m in Sources */,
+				8BD280421869269500AB9A82 /* CDOperationQueue.m in Sources */,
+				8BD280441869269500AB9A82 /* CDQueueController.m in Sources */,
+				8BD280461869269500AB9A82 /* CDQueueController+Test.m in Sources */,
+				8BD280401869269500AB9A82 /* CDKVOOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DB83D1A51451F1B200D94890 /* Sources */ = {
+		8B4AAF78186926370001DCE2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB83D1BB1451F1B200D94890 /* ConductorTests.m in Sources */,
-				DBFADED214524E6E00FD43FF /* CDTestOperation.m in Sources */,
-				DB4F2D911551D6A200216AB9 /* CDLongRunningTestOperation.m in Sources */,
-				DB4F2D941551E54400216AB9 /* CDOperationTests.m in Sources */,
-				DB4F2D971551E57700216AB9 /* CDOperationQueueTests.m in Sources */,
-				DB4F2D9B1551F60200216AB9 /* CDOperationQueueProgressWatcherTests.m in Sources */,
-				DB4F2DA01553329900216AB9 /* CDTest.m in Sources */,
-				DB9F94DD1598DEC300A97A05 /* CDCoreDataOperationTests.m in Sources */,
-				DB9F94E01598E06500A97A05 /* ConductorTestDataModel.xcdatamodeld in Sources */,
-				DB9F94E41598E38D00A97A05 /* CDTestCoreDataOperation.m in Sources */,
-				DB776C42160E63D900217625 /* CDOperationQueueMaxTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DBD1728C167948B80019FF3D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DBD1729D167948B80019FF3D /* main.m in Sources */,
-				DBD172A1167948B80019FF3D /* AppDelegate.m in Sources */,
-				DBD172AD167948B80019FF3D /* CDMainViewController.m in Sources */,
-				DBD172B516794A650019FF3D /* CDSuperLongTaskOperation.m in Sources */,
-				DBE4976816EBD80E00C4EF18 /* CDIsExecutingQueryOperation.m in Sources */,
-				DBDA921B16FBB5A700916FE4 /* OperationViewController.m in Sources */,
-				DBDA921E16FBB5BC00916FE4 /* OperationView.m in Sources */,
-				DBDA922316FBBFAD00916FE4 /* CDOneSecondOperation.m in Sources */,
+				8BD28093186927ED00AB9A82 /* CDOperationTests.m in Sources */,
+				8BD28096186927ED00AB9A82 /* CDTestOperation.m in Sources */,
+				8BD28091186927ED00AB9A82 /* CDOperationQueueProgressWatcherTests.m in Sources */,
+				8BD28097186927ED00AB9A82 /* ConductorTestDataModel.xcdatamodeld in Sources */,
+				8BD2808F186927ED00AB9A82 /* CDLongRunningTestOperation.m in Sources */,
+				8BD28092186927ED00AB9A82 /* CDOperationQueueTests.m in Sources */,
+				8BD28098186927ED00AB9A82 /* ConductorTests.m in Sources */,
+				8BD28090186927ED00AB9A82 /* CDOperationQueueMaxTests.m in Sources */,
+				8BD2808E186927ED00AB9A82 /* CDCoreDataOperationTests.m in Sources */,
+				8BD28094186927ED00AB9A82 /* CDTest.m in Sources */,
+				8BD28095186927ED00AB9A82 /* CDTestCoreDataOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		DB83D1B11451F1B200D94890 /* PBXTargetDependency */ = {
+		8B4AAF83186926370001DCE2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DB83D1991451F1B200D94890 /* Conductor */;
-			targetProxy = DB83D1B01451F1B200D94890 /* PBXContainerItemProxy */;
-		};
-		DBD172B716794B220019FF3D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DB83D1991451F1B200D94890 /* Conductor */;
-			targetProxy = DBD172B616794B220019FF3D /* PBXContainerItemProxy */;
+			target = 8B4AAF6B186926370001DCE2 /* Conductor */;
+			targetProxy = 8B4AAF82186926370001DCE2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DB83D1B61451F1B200D94890 /* InfoPlist.strings */ = {
+		8B4AAF88186926370001DCE2 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DB83D1B71451F1B200D94890 /* en */,
+				8B4AAF89186926370001DCE2 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		DBD17299167948B80019FF3D /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DBD1729A167948B80019FF3D /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		DBD172A8167948B80019FF3D /* MainStoryboard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DBD172A9167948B80019FF3D /* en */,
-			);
-			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		DB83D1941451F19F00D94890 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
-				SDKROOT = iphoneos;
-			};
-			name = Debug;
-		};
-		DB83D1951451F19F00D94890 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
-				SDKROOT = iphoneos;
-			};
-			name = Release;
-		};
-		DB83D1BD1451F1B200D94890 /* Debug */ = {
+		8B4AAF8D186926370001DCE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/Conductor.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Conductor/Conductor-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				OTHER_LDFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = include/Conductor/Private;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = include/Conductor;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SYMROOT = "";
-			};
-			name = Debug;
-		};
-		DB83D1BE1451F1B200D94890 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				DSTROOT = /tmp/Conductor.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Conductor/Conductor-Prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				OTHER_LDFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = include/Conductor/Private;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = include/Conductor;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SYMROOT = "";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		DB83D1C01451F1B200D94890 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
-				);
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Conductor/Conductor-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "ConductorTests/ConductorTests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		DB83D1C11451F1B200D94890 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				COPY_PHASE_STRIP = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
-				);
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Conductor/Conductor-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					NS_BLOCK_ASSERTIONS,
-					"LOGGING_ENABLED=0",
-				);
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "ConductorTests/ConductorTests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Release;
-		};
-		DBD172AE167948B80019FF3D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ConductorApp/ConductorApp-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "ConductorApp/ConductorApp-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
-		DBD172AF167948B80019FF3D /* Release */ = {
+		8B4AAF8E186926370001DCE2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ConductorApp/ConductorApp-Prefix.pch";
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "ConductorApp/ConductorApp-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
-				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
-		DBD4FFCF17B34E39009B00AC /* Coverage */ = {
+		8B4AAF90186926370001DCE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
-				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
-				GENERATE_PROFILING_CODE = YES;
-				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
-				SDKROOT = iphoneos;
-			};
-			name = Coverage;
-		};
-		DBD4FFD017B34E39009B00AC /* Coverage */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/Conductor.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Conductor/Conductor-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
+					"CONDUCTOR_LOG=1",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				OTHER_LDFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = include/Conductor/Private;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = include/Conductor;
-				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SYMROOT = "";
 			};
-			name = Coverage;
+			name = Debug;
 		};
-		DBD4FFD117B34E39009B00AC /* Coverage */ = {
+		8B4AAF91186926370001DCE2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/Conductor.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Conductor/Conductor-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		8B4AAF93186926370001DCE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
-				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Conductor/Conductor-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				GENERATE_PROFILING_CODE = YES;
 				INFOPLIST_FILE = "ConductorTests/ConductorTests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				WRAPPER_EXTENSION = octest;
+				WRAPPER_EXTENSION = xctest;
 			};
-			name = Coverage;
+			name = Debug;
 		};
-		DBD4FFD217B34E39009B00AC /* Coverage */ = {
+		8B4AAF94186926370001DCE2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ConductorApp/ConductorApp-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "ConductorApp/ConductorApp-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = "-ObjC";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Conductor/Conductor-Prefix.pch";
+				INFOPLIST_FILE = "ConductorTests/ConductorTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
+				WRAPPER_EXTENSION = xctest;
 			};
-			name = Coverage;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DB83D1921451F19E00D94890 /* Build configuration list for PBXProject "Conductor" */ = {
+		8B4AAF67186926370001DCE2 /* Build configuration list for PBXProject "Conductor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DB83D1941451F19F00D94890 /* Debug */,
-				DBD4FFCF17B34E39009B00AC /* Coverage */,
-				DB83D1951451F19F00D94890 /* Release */,
+				8B4AAF8D186926370001DCE2 /* Debug */,
+				8B4AAF8E186926370001DCE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DB83D1BC1451F1B200D94890 /* Build configuration list for PBXNativeTarget "Conductor" */ = {
+		8B4AAF8F186926370001DCE2 /* Build configuration list for PBXNativeTarget "Conductor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DB83D1BD1451F1B200D94890 /* Debug */,
-				DBD4FFD017B34E39009B00AC /* Coverage */,
-				DB83D1BE1451F1B200D94890 /* Release */,
+				8B4AAF90186926370001DCE2 /* Debug */,
+				8B4AAF91186926370001DCE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DB83D1BF1451F1B200D94890 /* Build configuration list for PBXNativeTarget "ConductorTests" */ = {
+		8B4AAF92186926370001DCE2 /* Build configuration list for PBXNativeTarget "ConductorTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DB83D1C01451F1B200D94890 /* Debug */,
-				DBD4FFD117B34E39009B00AC /* Coverage */,
-				DB83D1C11451F1B200D94890 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DBD172B0167948B80019FF3D /* Build configuration list for PBXNativeTarget "ConductorApp" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DBD172AE167948B80019FF3D /* Debug */,
-				DBD4FFD217B34E39009B00AC /* Coverage */,
-				DBD172AF167948B80019FF3D /* Release */,
+				8B4AAF93186926370001DCE2 /* Debug */,
+				8B4AAF94186926370001DCE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -998,17 +566,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		DB9F94DE1598E06500A97A05 /* ConductorTestDataModel.xcdatamodeld */ = {
+		8BD28089186927ED00AB9A82 /* ConductorTestDataModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				DB9F94DF1598E06500A97A05 /* ConductorTestDataModel.xcdatamodel */,
+				8BD2808A186927ED00AB9A82 /* ConductorTestDataModel.xcdatamodel */,
 			);
-			currentVersion = DB9F94DF1598E06500A97A05 /* ConductorTestDataModel.xcdatamodel */;
+			currentVersion = 8BD2808A186927ED00AB9A82 /* ConductorTestDataModel.xcdatamodel */;
 			path = ConductorTestDataModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = DB83D18F1451F19E00D94890 /* Project object */;
+	rootObject = 8B4AAF64186926370001DCE2 /* Project object */;
 }

@@ -39,13 +39,13 @@
     [queue setMaxConcurrentOperationCount:1];
     [queue setMaxQueuedOperationsCount:2];
     
-    STAssertFalse(queue.maxQueueOperationCountReached, @"Max queued operations should not be reached");
+    XCTAssertFalse(queue.maxQueueOperationCountReached, @"Max queued operations should not be reached");
     
     [queue addOperation:[CDLongRunningTestOperation longRunningOperationWithDuration:1.0]];
     [queue addOperation:[CDLongRunningTestOperation longRunningOperationWithDuration:1.0]];
     [queue addOperation:[CDLongRunningTestOperation longRunningOperationWithDuration:1.0]];
 
-    STAssertTrue(queue.maxQueueOperationCountReached, @"Max queued operations should not be reached");
+    XCTAssertTrue(queue.maxQueueOperationCountReached, @"Max queued operations should not be reached");
 }
 
 - (void)testSubmitMaxQueuesOperations
@@ -61,7 +61,7 @@
     [queue addOperation:[CDLongRunningTestOperation longRunningOperationWithDuration:1.0]];
     [queue addOperation:[CDLongRunningTestOperation longRunningOperationWithDuration:1.0]];
     
-    STAssertTrue(mockObserver.maxReachedMessageReceieved, @"Observer should have recieved max message");
+    XCTAssertTrue(mockObserver.maxReachedMessageReceieved, @"Observer should have recieved max message");
 }
 
 - (void)testCanBeginSubmitting
@@ -83,7 +83,7 @@
                                  beforeDate:loopUntil];
     }
     
-    STAssertTrue(mockObserver.canBeginMessageRecieved, @"Observer should have recieved max message");
+    XCTAssertTrue(mockObserver.canBeginMessageRecieved, @"Observer should have recieved max message");
 }
 
 

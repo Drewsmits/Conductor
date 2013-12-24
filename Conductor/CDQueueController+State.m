@@ -38,7 +38,7 @@
 
 - (void)suspendAllQueues
 {
-    ConductorLogTrace(@"Suspend all queues");
+    ConductorLog(@"Suspend all queues");
     
     NSArray *queuesNamesToSuspend = [self allQueueNames];
     
@@ -49,7 +49,7 @@
 
 - (void)suspendQueueNamed:(NSString *)queueName
 {
-    ConductorLogTrace(@"Suspend queue: %@", queueName);
+    ConductorLog(@"Suspend queue: %@", queueName);
     CDOperationQueue *queue = [self getQueueNamed:queueName];;
     [queue setSuspended:YES];
 }
@@ -58,7 +58,7 @@
 
 - (void)resumeAllQueues
 {
-    ConductorLogTrace(@"Resume all queues");
+    ConductorLog(@"Resume all queues");
     for (NSString *queueName in self.queues) {
         [self resumeQueueNamed:queueName];
     }
@@ -66,7 +66,7 @@
 
 - (void)resumeQueueNamed:(NSString *)queueName
 {
-    ConductorLogTrace(@"Resume queue: %@", queueName);
+    ConductorLog(@"Resume queue: %@", queueName);
     CDOperationQueue *queue = [self getQueueNamed:queueName];;
     [queue setSuspended:NO];
 }
@@ -75,7 +75,7 @@
 
 - (void)cancelAllOperations
 {
-    ConductorLogTrace(@"Cancel all operations");
+    ConductorLog(@"Cancel all operations");
 
     NSArray *queuesNamesToCancel = [self allQueueNames];
     
@@ -86,7 +86,7 @@
 
 - (void)cancelAllOperationsInQueueNamed:(NSString *)queueName
 {
-    ConductorLogTrace(@"Cancel all operations in queue: %@", queueName);
+    ConductorLog(@"Cancel all operations in queue: %@", queueName);
     CDOperationQueue *queue = [self getQueueNamed:queueName];
     [queue cancelAllOperations];
 }

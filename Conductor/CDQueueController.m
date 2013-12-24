@@ -62,11 +62,11 @@
         }
         
         if ([self getQueueNamed:queue.name]) {
-            ConductorLogTrace(@"Conductor already has queue named %@", queue.name);
+            ConductorLog(@"Conductor already has queue named %@", queue.name);
             return NO;
         }
         
-        ConductorLogTrace(@"Adding queue named: %@", queue.name);
+        ConductorLog(@"Adding queue named: %@", queue.name);
         
         [self.queues setObject:queue forKey:queue.name];
         
@@ -98,7 +98,7 @@
     CDOperationQueue *queue = [self getQueueNamed:queueName];
     NSAssert(queue, @"Tried to add an operation to a queue that doesnt exist. Create the queue, then add it to Conductor.");
     
-    ConductorLogTrace(@"Adding operation to queue: %@", queue.name);
+    ConductorLog(@"Adding operation to queue: %@", queue.name);
         
     // Add and start operation
     [queue addOperation:operation];

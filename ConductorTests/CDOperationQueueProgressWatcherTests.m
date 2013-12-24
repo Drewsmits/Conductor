@@ -19,8 +19,8 @@
                                                                                    progressBlock:nil
                                                                               andCompletionBlock:nil];
     
-    STAssertNotNil(watcher, @"Should create watcher");
-    STAssertEquals(watcher.startingOperationCount, 10, @"Should have correct number of operations");
+    XCTAssertNotNil(watcher, @"Should create watcher");
+    XCTAssertEqual(watcher.startingOperationCount, 10, @"Should have correct number of operations");
 }
 
 - (void)testRunWatcherProgressBlock {
@@ -36,8 +36,8 @@
                                                                               andCompletionBlock:nil];
     
     [watcher runProgressBlockWithCurrentOperationCount:@1];
-        
-    STAssertEqualsWithAccuracy(progressIndicator, 0.9f, 0.000001f, @"Progress block should run correctly");
+    
+    XCTAssertEqualWithAccuracy(progressIndicator, 0.9f, 0.000001f, @"Progress block should run correctly");
 }
 
 - (void)testRunWatcherCompletionBlock {
@@ -54,7 +54,7 @@
     
     [watcher runCompletionBlock];
     
-    STAssertTrue(completionBlockDidRun, @"Completion block should run correctly");
+    XCTAssertTrue(completionBlockDidRun, @"Completion block should run correctly");
 }
 
 - (void)testStartingOperationCount
@@ -74,7 +74,7 @@
     NSArray *watchers = [[testOperationQueue progressObservers] allObjects];
     CDProgressObserver *watcher = (CDProgressObserver *)watchers[0];
     
-    STAssertEquals(watcher.startingOperationCount, 3, @"Progress watcher should have correct starting operation count");    
+    XCTAssertEqual(watcher.startingOperationCount, 3, @"Progress watcher should have correct starting operation count");    
 }
 
 - (void)testAddToStartingOperationCount
@@ -97,7 +97,7 @@
     NSArray *watchers = [[testOperationQueue progressObservers] allObjects];
     CDProgressObserver *watcher = (CDProgressObserver *)watchers[0];
     
-    STAssertEquals(watcher.startingOperationCount, 4, @"Progress watcher should have correct starting operation count");    
+    XCTAssertEqual(watcher.startingOperationCount, 4, @"Progress watcher should have correct starting operation count");    
 }
 
 - (void)testRunWatcherProgressAndCompletionBlocks
@@ -135,8 +135,8 @@
                                  beforeDate:loopUntil];
     } 
     
-    STAssertTrue(completionBlockDidRun, @"Completion block should run");
-    STAssertEquals(progressIndicator, 1.0f, @"Progress block should run correctly");
+    XCTAssertTrue(completionBlockDidRun, @"Completion block should run");
+    XCTAssertEqual(progressIndicator, 1.0f, @"Progress block should run correctly");
 }
 
 @end

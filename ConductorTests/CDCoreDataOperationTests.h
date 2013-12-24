@@ -6,7 +6,6 @@
 //  Copyright (c) 2012 Andrew B. Smith. All rights reserved.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
 #import <CoreData/CoreData.h>
 #import "CDTest.h"
 

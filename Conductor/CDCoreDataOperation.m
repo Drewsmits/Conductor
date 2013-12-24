@@ -57,7 +57,7 @@
             NSError *error;
             saved = [self.backgroundContext save:&error];
             if (!saved) {
-                ConductorLogError(@"Save failed: %@", error);
+                ConductorLog(@"Save failed: %@", error);
             };
         }];
     }
@@ -69,7 +69,7 @@
     [self.mainContext performBlock:^{
         NSError *error;
         if (![self.mainContext save:&error]) {
-            ConductorLogError(@"Save failed: %@", error);
+            ConductorLog(@"Save failed: %@", error);
         }
     }];
 }

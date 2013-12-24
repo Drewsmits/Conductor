@@ -67,7 +67,7 @@
     //
     if ([self getOperationWithIdentifier:operation.identifier] != nil)
     {
-        ConductorLogTrace(@"Already has operation with identifier %@. Uniquifiying this one.", operation.identifier);
+        ConductorLog(@"Already has operation with identifier %@. Uniquifiying this one.", operation.identifier);
         operation.identifier = [[NSProcessInfo processInfo] globallyUniqueString];
     }
     
@@ -117,7 +117,7 @@
     {
         if (![self.operations objectForKey:operation.identifier]) return;
      
-        ConductorLogTrace(@"Removing operation %@ from queue %@", operation.identifier, self.name);
+        ConductorLog(@"Removing operation %@ from queue %@", operation.identifier, self.name);
 
         //
         // Remove the operation
@@ -252,7 +252,7 @@
 {
     @synchronized (self.progressObservers)
     {
-        ConductorLogTrace(@"Adding progress watcher to queue %@", self.name);
+        ConductorLog(@"Adding progress watcher to queue %@", self.name);
         observer.startingOperationCount = self.operationCount;
         [self.progressObservers addObject:observer];
     }

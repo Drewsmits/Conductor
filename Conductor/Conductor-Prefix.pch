@@ -1,9 +1,23 @@
 //
-// Prefix header for all source files of the 'Conductor' target in the 'Conductor' project
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
 //
 
 #ifdef __OBJC__
     #import <Foundation/Foundation.h>
     #import <CoreGraphics/CoreGraphics.h>
-    #import "ConductorLogging.h"
+#endif
+
+/**
+ CONDUCTOR_LOG is defined as a preprocessor macro. Release builds automatically silence
+ logs and skips assertions.
+ */
+#if defined(DEBUG) && defined(CONDUCTOR_LOG)
+#define ConductorLog(...) NSLog(@"%s %@", __PRETTY_FUNCTION__, [NSString stringWithFormat:__VA_ARGS__])
+#else
+    #define ConductorLog(...) do { } while (0)
+    #ifndef NS_BLOCK_ASSERTIONS
+        #define NS_BLOCK_ASSERTIONS
+    #endif
 #endif

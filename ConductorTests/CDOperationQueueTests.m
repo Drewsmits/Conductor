@@ -17,13 +17,13 @@
 - (void)testCreateQueueWithName
 {
     CDOperationQueue *queue = [CDOperationQueue queueWithName:@"MyQueueName"];
-    STAssertEqualObjects(queue.name, @"MyQueueName", @"Queue should have the correct name");
+    XCTAssertEqualObjects(queue.name, @"MyQueueName", @"Queue should have the correct name");
 }
 
 - (void)testAddNonCDOperationToQueue
 {
     CDOperation *op = (CDOperation *)[NSOperation new];
-    STAssertThrows([testOperationQueue addOperation:op], @"Adding a non CDOperation subclass should raise an exception");
+    XCTAssertThrows([testOperationQueue addOperation:op], @"Adding a non CDOperation subclass should raise an exception");
 }
 
 - (void)testAddOperationToQueue
@@ -47,7 +47,7 @@
                                  beforeDate:loopUntil];
     }    
     
-    STAssertTrue(hasFinished, @"Test operation queue should finish");
+    XCTAssertTrue(hasFinished, @"Test operation queue should finish");
 }
 
 - (void)testAddOperationToQueueWithDuplicateIdentifier
@@ -58,11 +58,11 @@
     [testOperationQueue addOperation:op1];
     [testOperationQueue addOperation:op2];
     
-    STAssertEqualObjects(op1.identifier, @"anIdentifier", @"First operation should have same identifier");
+    XCTAssertEqualObjects(op1.identifier, @"anIdentifier", @"First operation should have same identifier");
     
     BOOL notEqual = [op1.identifier isEqual:op2.identifier];
     
-    STAssertFalse(notEqual, @"Second operation should have a different ID");
+    XCTAssertFalse(notEqual, @"Second operation should have a different ID");
 }
 
 - (void)testAddOperationToQueueAtPriority
@@ -87,7 +87,7 @@
                                  beforeDate:loopUntil];
     }    
     
-    STAssertEquals(op.queuePriority, NSOperationQueuePriorityVeryLow, @"Operation should have correct priority");
+    XCTAssertEqual(op.queuePriority, NSOperationQueuePriorityVeryLow, @"Operation should have correct priority");
 }
 
 - (void)testChangeOperationPriority
@@ -114,7 +114,7 @@
                                  beforeDate:loopUntil];
     } 
     
-    STAssertEquals(op.queuePriority, NSOperationQueuePriorityVeryLow, @"Operation should have correct priority");
+    XCTAssertEqual(op.queuePriority, NSOperationQueuePriorityVeryLow, @"Operation should have correct priority");
 }
 
 - (void)testChangeOperationPriorityFinishOrder
@@ -170,7 +170,7 @@
     float firstInt = [first timeIntervalSinceNow];
     float lastInt  = [last timeIntervalSinceNow];
     
-    STAssertTrue((firstInt < lastInt), @"Operation should finish first");
+    XCTAssertTrue((firstInt < lastInt), @"Operation should finish first");
 }
 
 - (void)testEmptyQueueShouldHaveEmptyOperationsDict
@@ -194,14 +194,14 @@
                                  beforeDate:loopUntil];
     }    
     
-    STAssertEquals([testOperationQueue operationCount], 0U, @"Operation queue should be empty");
+    XCTAssertEqual([testOperationQueue operationCount], 0U, @"Operation queue should be empty");
 }
 
 #pragma mark - Operation Count
 
 - (void)testOperationCountNoQueue
 {
-    STAssertEquals(testOperationQueue.operationCount, 0U, @"Operation count should be correct");
+    XCTAssertEqual(testOperationQueue.operationCount, 0U, @"Operation count should be correct");
 }
 
 - (void)testOperationCountQueue
@@ -214,7 +214,7 @@
     [testOperationQueue addOperation:op2];
     [testOperationQueue addOperation:op3];
 
-    STAssertEquals(testOperationQueue.operationCount, 3U, @"Operation count should be correct");
+    XCTAssertEqual(testOperationQueue.operationCount, 3U, @"Operation count should be correct");
 }
 
 - (void)testOperationCountAfterOperationFinishes
@@ -223,7 +223,7 @@
     
     [testOperationQueue addOperation:op];
     
-    STAssertTrue(testOperationQueue.isExecuting, @"Operation queue should be running");
+    XCTAssertTrue(testOperationQueue.isExecuting, @"Operation queue should be running");
     
     NSDate *loopUntil = [NSDate dateWithTimeIntervalSinceNow:0.2];
     while (testOperationQueue.isExecuting) {
@@ -231,7 +231,7 @@
                                  beforeDate:loopUntil];
     }    
     
-    STAssertEquals(testOperationQueue.operationCount, 0U, @"Operation count should be correct");
+    XCTAssertEqual(testOperationQueue.operationCount, 0U, @"Operation count should be correct");
 }
 
 #pragma mark - State
@@ -242,7 +242,7 @@
     
     [testOperationQueue addOperation:op];
     
-    STAssertTrue(testOperationQueue.isExecuting, @"Operation queue should be running");
+    XCTAssertTrue(testOperationQueue.isExecuting, @"Operation queue should be running");
     
     NSDate *loopUntil = [NSDate dateWithTimeIntervalSinceNow:0.2];
     while (testOperationQueue.isExecuting) {
@@ -250,7 +250,7 @@
                                  beforeDate:loopUntil];
     }    
     
-    STAssertFalse(testOperationQueue.isExecuting, @"Operation queue should not be running");
+    XCTAssertFalse(testOperationQueue.isExecuting, @"Operation queue should not be running");
 }
 
 - (void)testOperationQueueShouldReportFinished
@@ -258,7 +258,7 @@
     CDTestOperation *op = [CDTestOperation new];
     [testOperationQueue addOperation:op];
         
-    STAssertFalse(testOperationQueue.isFinished, @"Operation queue should not be finished");
+    XCTAssertFalse(testOperationQueue.isFinished, @"Operation queue should not be finished");
 
     
     NSDate *loopUntil = [NSDate dateWithTimeIntervalSinceNow:0.2];
@@ -267,7 +267,7 @@
                                  beforeDate:loopUntil];
     }    
     
-    STAssertTrue(testOperationQueue.isFinished, @"Operation queue should be finished");
+    XCTAssertTrue(testOperationQueue.isFinished, @"Operation queue should be finished");
 }
 
 - (void)testOperationQueueShouldReportSuspended
@@ -275,11 +275,11 @@
     CDLongRunningTestOperation *op = [CDLongRunningTestOperation new];    
     [testOperationQueue addOperation:op];
     
-    STAssertFalse(testOperationQueue.isSuspended, @"Operation queue should not be suspended");
+    XCTAssertFalse(testOperationQueue.isSuspended, @"Operation queue should not be suspended");
     
     [testOperationQueue setSuspended:YES];
     
-    STAssertTrue(testOperationQueue.isSuspended, @"Operation queue should be finished");
+    XCTAssertTrue(testOperationQueue.isSuspended, @"Operation queue should be finished");
 }
 
 - (void)testOperationQueueShouldResumeAfterSuspended
@@ -290,7 +290,7 @@
     [testOperationQueue setSuspended:YES];
     [testOperationQueue setSuspended:NO];
 
-    STAssertTrue(testOperationQueue.isExecuting, @"Operation queue should be executing");
+    XCTAssertTrue(testOperationQueue.isExecuting, @"Operation queue should be executing");
 }
 
 #pragma mark - Progress

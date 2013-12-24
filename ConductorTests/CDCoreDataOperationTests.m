@@ -25,7 +25,7 @@
     // Build Model
     model = [[NSManagedObjectModel alloc] initWithContentsOfURL:DataModelURL()];
     
-    STAssertNotNil(model, @"Managed Object Model should exist");
+    XCTAssertNotNil(model, @"Managed Object Model should exist");
     
     // Build persistent store coordinator
     coord = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:model];
@@ -46,7 +46,7 @@
 - (void)tearDown
 {
     NSError *error = nil;
-    STAssertTrue([coord removePersistentStore:store error:&error], 
+    XCTAssertTrue([coord removePersistentStore:store error:&error], 
                  @"couldn't remove persistent store: %@", error);
         
     [super tearDown];
@@ -58,7 +58,7 @@
     
     [operation start];
     
-    STAssertNotNil(operation.backgroundContext, @"Operation background context should not be nil!");
+    XCTAssertNotNil(operation.backgroundContext, @"Operation background context should not be nil!");
 }
 
 - (void)testBackgroundContextDidSave
@@ -71,7 +71,7 @@
     NSError *error = nil;
     NSArray *results = [context executeFetchRequest:request error:&error];
     
-    STAssertEquals([results count], 0U, @"Should only have one employee");
+    XCTAssertEqual([results count], 0U, @"Should only have one employee");
 
     __block BOOL hasFinished = NO;
     void (^completionBlock)(void) = ^(void) {
@@ -96,8 +96,8 @@
     
     NSManagedObject *employee = [results lastObject];
 
-    STAssertEquals([results count], 1U, @"Should only have one employee");
-    STAssertEqualObjects([employee valueForKey:@"employeeID"], @1, @"Employee should have correct ID");
+    XCTAssertEqual([results count], 1U, @"Should only have one employee");
+    XCTAssertEqualObjects([employee valueForKey:@"employeeID"], @1, @"Employee should have correct ID");
 }
 
 @end

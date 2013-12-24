@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 Andrew B. Smith. All rights reserved.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
 
 #import "CDQueueController.h"
 #import "CDOperationQueue.h"
@@ -14,7 +14,7 @@
 
 #define CONDUCTOR_TEST_QUEUE @"com.conductor.testQueue"
 
-@interface CDTest : SenTestCase {
+@interface CDTest : XCTestCase {
     CDOperationQueue *testOperationQueue;
     CDQueueController *conductor;
 }
