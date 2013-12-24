@@ -99,5 +99,4 @@
     XCTAssertTrue(mockObserver.canBeginMessageRecieved, @"Observer should have recieved max message");
 }
 
-
 @end

@@ -49,10 +49,8 @@
     __block BOOL hasFinished = NO;
     
     void (^completionBlock)(void) = ^(void) {
-        dispatch_async(dispatch_get_main_queue(), ^(void) {
-            hasFinished = YES;        
-        });
-    };         
+        hasFinished = YES;
+    };
     
     CDTestOperation *op = [CDTestOperation new];
     op.completionBlock = completionBlock;
@@ -84,10 +82,8 @@
     __block BOOL hasFinished = NO;
     
     void (^completionBlock)(void) = ^(void) {
-        dispatch_async(dispatch_get_main_queue(), ^(void) {
-            hasFinished = YES;        
-        });
-    };         
+        hasFinished = YES;
+    };
     
     CDTestOperation *op = [CDTestOperation new];
     op.completionBlock = completionBlock;
@@ -109,10 +105,8 @@
     __block BOOL hasFinished = NO;
     
     void (^completionBlock)(void) = ^(void) {
-        dispatch_async(dispatch_get_main_queue(), ^(void) {
-            hasFinished = YES;        
-        });
-    };     
+        hasFinished = YES;        
+    };
     
     CDTestOperation *op = [CDTestOperation new];
     op.completionBlock = completionBlock;
@@ -139,11 +133,9 @@
     __block NSDate *first = nil;
     
     void (^finishLastBlock)(void) = ^(void) {
-        dispatch_async(dispatch_get_main_queue(), ^(void) {
-            hasFinished = YES;
-            last = [NSDate date];
-        });
-    };    
+        hasFinished = YES;
+        last = [NSDate date];
+    };
     
     void (^finishFirstBlock)(void) = ^(void) {
         dispatch_async(dispatch_get_main_queue(), ^(void) {
@@ -194,19 +186,15 @@
     CDTestOperation *op = [CDTestOperation new];
     
     CDProgressObserver *observer = [CDProgressObserver progressObserverWithStartingOperationCount:0
-                                                                                                                progressBlock:nil
-                                                                                                           andCompletionBlock:^ {
-                                                                                                               hasFinished = YES;
-                                                                                                           }];
+                                                                                    progressBlock:nil
+                                                                               andCompletionBlock:^ {
+                                                                                   hasFinished = YES;
+                                                                               }];
     [testOperationQueue addProgressObserver:observer];
     
     [testOperationQueue addOperation:op];
     
-    NSDate *loopUntil = [NSDate dateWithTimeIntervalSinceNow:0.1];
-    while (hasFinished == NO) {
-        [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode
-                                 beforeDate:loopUntil];
-    }    
+    WAIT_ON_BOOL(hasFinished);
     
     XCTAssertEqual([testOperationQueue operationCount], 0U, @"Operation queue should be empty");
 }
@@ -239,11 +227,7 @@
     
     XCTAssertTrue(testOperationQueue.isExecuting, @"Operation queue should be running");
     
-    NSDate *loopUntil = [NSDate dateWithTimeIntervalSinceNow:0.2];
-    while (testOperationQueue.isExecuting) {
-        [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode
-                                 beforeDate:loopUntil];
-    }    
+    WAIT_ON_BOOL(!testOperationQueue.isExecuting)
     
     XCTAssertEqual(testOperationQueue.operationCount, 0U, @"Operation count should be correct");
 }
@@ -258,11 +242,7 @@
     
     XCTAssertTrue(testOperationQueue.isExecuting, @"Operation queue should be running");
     
-    NSDate *loopUntil = [NSDate dateWithTimeIntervalSinceNow:0.2];
-    while (testOperationQueue.isExecuting) {
-        [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode
-                                 beforeDate:loopUntil];
-    }    
+    WAIT_ON_BOOL(!testOperationQueue.isExecuting)
     
     XCTAssertFalse(testOperationQueue.isExecuting, @"Operation queue should not be running");
 }
@@ -274,12 +254,7 @@
         
     XCTAssertFalse(testOperationQueue.isFinished, @"Operation queue should not be finished");
 
-    
-    NSDate *loopUntil = [NSDate dateWithTimeIntervalSinceNow:0.2];
-    while (testOperationQueue.isExecuting) {
-        [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode
-                                 beforeDate:loopUntil];
-    }    
+    WAIT_ON_BOOL(!testOperationQueue.isExecuting)
     
     XCTAssertTrue(testOperationQueue.isFinished, @"Operation queue should be finished");
 }
@@ -306,7 +281,5 @@
 
     XCTAssertTrue(testOperationQueue.isExecuting, @"Operation queue should be executing");
 }
-
-#pragma mark - Progress
 
 @end

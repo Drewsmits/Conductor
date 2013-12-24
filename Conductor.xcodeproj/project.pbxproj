@@ -204,17 +204,14 @@
 		8B4AAF85186926370001DCE2 /* ConductorTests */ = {
 			isa = PBXGroup;
 			children = (
-				8BD28079186927ED00AB9A82 /* CDLongRunningTestOperation.h */,
-				8BD2807A186927ED00AB9A82 /* CDLongRunningTestOperation.m */,
-				8BD2809E18692F3500AB9A82 /* Progress */,
-				8BD2809F18692F3E00AB9A82 /* Queue */,
-				8BD2809D18692F2500AB9A82 /* Operation Tests */,
 				8BD28083186927ED00AB9A82 /* CDTest.h */,
 				8BD28084186927ED00AB9A82 /* CDTest.m */,
 				8BD28089186927ED00AB9A82 /* ConductorTestDataModel.xcdatamodeld */,
 				8BD2808B186927ED00AB9A82 /* ConductorTestMacros.h */,
-				8BD2808C186927ED00AB9A82 /* CDQueueControllerTests.h */,
-				8BD2808D186927ED00AB9A82 /* CDQueueControllerTests.m */,
+				8BD2809D18692F2500AB9A82 /* Operation */,
+				8BD2809E18692F3500AB9A82 /* Progress */,
+				8BD2809F18692F3E00AB9A82 /* Queue */,
+				8BD2810E1869343700AB9A82 /* Queue Controller */,
 				8B4AAF86186926370001DCE2 /* Supporting Files */,
 			);
 			path = ConductorTests;
@@ -273,19 +270,16 @@
 			name = Progress;
 			sourceTree = "<group>";
 		};
-		8BD2809D18692F2500AB9A82 /* Operation Tests */ = {
+		8BD2809D18692F2500AB9A82 /* Operation */ = {
 			isa = PBXGroup;
 			children = (
-				8BD28087186927ED00AB9A82 /* CDTestOperation.h */,
-				8BD28088186927ED00AB9A82 /* CDTestOperation.m */,
-				8BD28085186927ED00AB9A82 /* CDTestCoreDataOperation.h */,
-				8BD28086186927ED00AB9A82 /* CDTestCoreDataOperation.m */,
+				8BD2810F186934F400AB9A82 /* Test Operations */,
 				8BD28077186927ED00AB9A82 /* CDCoreDataOperationTests.h */,
 				8BD28078186927ED00AB9A82 /* CDCoreDataOperationTests.m */,
 				8BD28081186927ED00AB9A82 /* CDOperationTests.h */,
 				8BD28082186927ED00AB9A82 /* CDOperationTests.m */,
 			);
-			name = "Operation Tests";
+			name = Operation;
 			sourceTree = "<group>";
 		};
 		8BD2809E18692F3500AB9A82 /* Progress */ = {
@@ -306,6 +300,28 @@
 				8BD28080186927ED00AB9A82 /* CDOperationQueueTests.m */,
 			);
 			name = Queue;
+			sourceTree = "<group>";
+		};
+		8BD2810E1869343700AB9A82 /* Queue Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8BD2808C186927ED00AB9A82 /* CDQueueControllerTests.h */,
+				8BD2808D186927ED00AB9A82 /* CDQueueControllerTests.m */,
+			);
+			name = "Queue Controller";
+			sourceTree = "<group>";
+		};
+		8BD2810F186934F400AB9A82 /* Test Operations */ = {
+			isa = PBXGroup;
+			children = (
+				8BD28079186927ED00AB9A82 /* CDLongRunningTestOperation.h */,
+				8BD2807A186927ED00AB9A82 /* CDLongRunningTestOperation.m */,
+				8BD28085186927ED00AB9A82 /* CDTestCoreDataOperation.h */,
+				8BD28086186927ED00AB9A82 /* CDTestCoreDataOperation.m */,
+				8BD28087186927ED00AB9A82 /* CDTestOperation.h */,
+				8BD28088186927ED00AB9A82 /* CDTestOperation.m */,
+			);
+			name = "Test Operations";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

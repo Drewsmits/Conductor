@@ -46,12 +46,9 @@
 - (void)testRunTestOperation
 {    
     __block BOOL hasFinished = NO;
-    
     void (^completionBlock)(void) = ^(void) {
-        dispatch_async(dispatch_get_main_queue(), ^(void) {
-            hasFinished = YES;        
-        });
-    };         
+        hasFinished = YES;
+    };
     
     CDTestOperation *op = [CDTestOperation new];
     op.completionBlock = completionBlock;
@@ -65,21 +62,17 @@
     XCTAssertTrue(op.isFinished, @"Test operation should be finished");
 }
 
-//- (void)testCancelOperation
-//{    
-//    CDTestOperation *op = [CDTestOperation new];
-//    
-//    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
-//    [queue addOperation:op];
-//    [queue cancelAllOperations];
-//    
-//    NSDate *loopUntil = [NSDate dateWithTimeIntervalSinceNow:0.2];
-//    while (queue.operationCount == 0) {
-//        [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode
-//                                 beforeDate:loopUntil];
-//    }    
-//    
-//    XCTAssertTrue(op.isCancelled, @"Test operation should be cancelled");
-//}
+- (void)testCancelOperation
+{    
+    CDTestOperation *op = [CDTestOperation new];
+    
+    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+    [queue addOperation:op];
+    [queue cancelAllOperations];
+    
+    WAIT_ON_BOOL(queue.operationCount == 0);
+    
+    XCTAssertTrue(op.isCancelled, @"Test operation should be cancelled");
+}
 
 @end
