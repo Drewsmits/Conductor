@@ -14,7 +14,7 @@
  logs and skips assertions.
  */
 #if defined(DEBUG) && defined(CONDUCTOR_LOG)
-#define ConductorLog(...) NSLog(@"%s %@", __PRETTY_FUNCTION__, [NSString stringWithFormat:__VA_ARGS__])
+#define ConductorLog(...) NSLog(@"CONDUCTOR_LOG: %@", [NSString stringWithFormat:__VA_ARGS__])
 #else
     #define ConductorLog(...) do { } while (0)
     #ifndef NS_BLOCK_ASSERTIONS
