@@ -41,7 +41,7 @@
 		8BD28095186927ED00AB9A82 /* CDTestCoreDataOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD28086186927ED00AB9A82 /* CDTestCoreDataOperation.m */; };
 		8BD28096186927ED00AB9A82 /* CDTestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD28088186927ED00AB9A82 /* CDTestOperation.m */; };
 		8BD28097186927ED00AB9A82 /* ConductorTestDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8BD28089186927ED00AB9A82 /* ConductorTestDataModel.xcdatamodeld */; };
-		8BD28098186927ED00AB9A82 /* ConductorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD2808D186927ED00AB9A82 /* ConductorTests.m */; };
+		8BD28098186927ED00AB9A82 /* CDQueueControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD2808D186927ED00AB9A82 /* CDQueueControllerTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,8 +122,8 @@
 		8BD28088186927ED00AB9A82 /* CDTestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDTestOperation.m; sourceTree = "<group>"; };
 		8BD2808A186927ED00AB9A82 /* ConductorTestDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ConductorTestDataModel.xcdatamodel; sourceTree = "<group>"; };
 		8BD2808B186927ED00AB9A82 /* ConductorTestMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConductorTestMacros.h; sourceTree = "<group>"; };
-		8BD2808C186927ED00AB9A82 /* ConductorTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConductorTests.h; sourceTree = "<group>"; };
-		8BD2808D186927ED00AB9A82 /* ConductorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConductorTests.m; sourceTree = "<group>"; };
+		8BD2808C186927ED00AB9A82 /* CDQueueControllerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDQueueControllerTests.h; sourceTree = "<group>"; };
+		8BD2808D186927ED00AB9A82 /* CDQueueControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDQueueControllerTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,28 +204,17 @@
 		8B4AAF85186926370001DCE2 /* ConductorTests */ = {
 			isa = PBXGroup;
 			children = (
-				8BD28077186927ED00AB9A82 /* CDCoreDataOperationTests.h */,
-				8BD28078186927ED00AB9A82 /* CDCoreDataOperationTests.m */,
 				8BD28079186927ED00AB9A82 /* CDLongRunningTestOperation.h */,
 				8BD2807A186927ED00AB9A82 /* CDLongRunningTestOperation.m */,
-				8BD2807B186927ED00AB9A82 /* CDOperationQueueMaxTests.h */,
-				8BD2807C186927ED00AB9A82 /* CDOperationQueueMaxTests.m */,
-				8BD2807D186927ED00AB9A82 /* CDOperationQueueProgressWatcherTests.h */,
-				8BD2807E186927ED00AB9A82 /* CDOperationQueueProgressWatcherTests.m */,
-				8BD2807F186927ED00AB9A82 /* CDOperationQueueTests.h */,
-				8BD28080186927ED00AB9A82 /* CDOperationQueueTests.m */,
-				8BD28081186927ED00AB9A82 /* CDOperationTests.h */,
-				8BD28082186927ED00AB9A82 /* CDOperationTests.m */,
+				8BD2809E18692F3500AB9A82 /* Progress */,
+				8BD2809F18692F3E00AB9A82 /* Queue */,
+				8BD2809D18692F2500AB9A82 /* Operation Tests */,
 				8BD28083186927ED00AB9A82 /* CDTest.h */,
 				8BD28084186927ED00AB9A82 /* CDTest.m */,
-				8BD28085186927ED00AB9A82 /* CDTestCoreDataOperation.h */,
-				8BD28086186927ED00AB9A82 /* CDTestCoreDataOperation.m */,
-				8BD28087186927ED00AB9A82 /* CDTestOperation.h */,
-				8BD28088186927ED00AB9A82 /* CDTestOperation.m */,
 				8BD28089186927ED00AB9A82 /* ConductorTestDataModel.xcdatamodeld */,
 				8BD2808B186927ED00AB9A82 /* ConductorTestMacros.h */,
-				8BD2808C186927ED00AB9A82 /* ConductorTests.h */,
-				8BD2808D186927ED00AB9A82 /* ConductorTests.m */,
+				8BD2808C186927ED00AB9A82 /* CDQueueControllerTests.h */,
+				8BD2808D186927ED00AB9A82 /* CDQueueControllerTests.m */,
 				8B4AAF86186926370001DCE2 /* Supporting Files */,
 			);
 			path = ConductorTests;
@@ -282,6 +271,41 @@
 				8BD280361869269400AB9A82 /* CDProgressObserver.m */,
 			);
 			name = Progress;
+			sourceTree = "<group>";
+		};
+		8BD2809D18692F2500AB9A82 /* Operation Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8BD28087186927ED00AB9A82 /* CDTestOperation.h */,
+				8BD28088186927ED00AB9A82 /* CDTestOperation.m */,
+				8BD28085186927ED00AB9A82 /* CDTestCoreDataOperation.h */,
+				8BD28086186927ED00AB9A82 /* CDTestCoreDataOperation.m */,
+				8BD28077186927ED00AB9A82 /* CDCoreDataOperationTests.h */,
+				8BD28078186927ED00AB9A82 /* CDCoreDataOperationTests.m */,
+				8BD28081186927ED00AB9A82 /* CDOperationTests.h */,
+				8BD28082186927ED00AB9A82 /* CDOperationTests.m */,
+			);
+			name = "Operation Tests";
+			sourceTree = "<group>";
+		};
+		8BD2809E18692F3500AB9A82 /* Progress */ = {
+			isa = PBXGroup;
+			children = (
+				8BD2807D186927ED00AB9A82 /* CDOperationQueueProgressWatcherTests.h */,
+				8BD2807E186927ED00AB9A82 /* CDOperationQueueProgressWatcherTests.m */,
+			);
+			name = Progress;
+			sourceTree = "<group>";
+		};
+		8BD2809F18692F3E00AB9A82 /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+				8BD2807B186927ED00AB9A82 /* CDOperationQueueMaxTests.h */,
+				8BD2807C186927ED00AB9A82 /* CDOperationQueueMaxTests.m */,
+				8BD2807F186927ED00AB9A82 /* CDOperationQueueTests.h */,
+				8BD28080186927ED00AB9A82 /* CDOperationQueueTests.m */,
+			);
+			name = Queue;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -386,7 +410,7 @@
 				8BD28097186927ED00AB9A82 /* ConductorTestDataModel.xcdatamodeld in Sources */,
 				8BD2808F186927ED00AB9A82 /* CDLongRunningTestOperation.m in Sources */,
 				8BD28092186927ED00AB9A82 /* CDOperationQueueTests.m in Sources */,
-				8BD28098186927ED00AB9A82 /* ConductorTests.m in Sources */,
+				8BD28098186927ED00AB9A82 /* CDQueueControllerTests.m in Sources */,
 				8BD28090186927ED00AB9A82 /* CDOperationQueueMaxTests.m in Sources */,
 				8BD2808E186927ED00AB9A82 /* CDCoreDataOperationTests.m in Sources */,
 				8BD28094186927ED00AB9A82 /* CDTest.m in Sources */,

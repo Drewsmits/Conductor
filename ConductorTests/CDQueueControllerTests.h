@@ -25,6 +25,6 @@
 
 #import "CDTest.h"
 
-@interface ConductorTests : CDTest
+@interface CDQueueControllerTests : CDTest
 
 @end

@@ -23,7 +23,7 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
 
-#import "ConductorTests.h"
+#import "CDQueueControllerTests.h"
 
 #import "Conductor.h"
 
@@ -32,7 +32,7 @@
 #import "CDLongRunningTestOperation.h"
 #import "ConductorTestMacros.h"
 
-@implementation ConductorTests
+@implementation CDQueueControllerTests
 
 - (void)testConductorAddOperation {
     

@@ -24,7 +24,6 @@
 //
 
 
-#import "ConductorTests.h"
 #import "CDTest.h"
 
 @interface CDOperationQueueProgressWatcherTests : CDTest
