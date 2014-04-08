@@ -45,7 +45,7 @@
     
     __block float progressIndicator = 0.0f;
     
-    CDProgressObserverProgressBlock progressBlock = ^(float progress) {
+    CDProgressObserverProgressBlock progressBlock = ^(CGFloat progress) {
         progressIndicator = progress;
     };
     
@@ -130,7 +130,7 @@
     
     __block float progressIndicator = 0.0f;
     
-    CDProgressObserverProgressBlock progressBlock = ^(float progress) {
+    CDProgressObserverProgressBlock progressBlock = ^(CGFloat progress) {
         progressIndicator = progress;
     };
     
